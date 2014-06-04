@@ -30,8 +30,8 @@ par do
 			await 10s;
 		end
 	else
-		par do
-			usrMsg_t(msgRadio2,1);
+		usrMsg_t(msgRadio2,1);
+		par do			
 			loop do
 				await RECEIVE;
 				emit LED2(3);
@@ -88,12 +88,6 @@ par do
 					with
 						msgRadio2_source = nodeId;
 						emit Q_PUT (msgRadio2);
-
-						/*par/or do
-							await SEND_DONE;
-						with
-							await 5s;*/
-						end
 						emit LED0(3);
 						await 1ms;
 					end
@@ -102,22 +96,28 @@ par do
 		end
 	end
 with
+	var u8 x ;
+	usrMsg_t(msgRadio4, 1);
 
-	usrMsg_t(msgRadioQ, 1);
-	u8 x ;
 	loop do
 		await Q_READY ;
 
-		loop/or do
-			Q_GET(msgRadioQ);
-			if msgRadioQ_d8_target == BROADCAST then
-				emit SEND(msgRadioQ);
+		loop do
+			
+			emit Q_GET(msgRadio4);
+			if msgRadio4_target == BROADCAST then
+				emit SEND(msgRadio4);
 				await SEND_DONE;
 			else
-				emit SEND_ACK(msgRadioQ);
-				x = await SEND_DONE_ACK ;
-				if x == true then
-
+				var u8 try = 0 ;
+				loop do
+					emit SEND_ACK(msgRadio4);
+					x = await SEND_DONE_ACK ;
+					if x then
+						break;
+					else
+						try = try + 1 ;
+					end
 				end
 			end
 

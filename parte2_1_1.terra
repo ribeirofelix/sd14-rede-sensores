@@ -1,0 +1,129 @@
+@include(/home/terra/TerraNet_v0.1/terra/Terra.m4)
+var u8 lastReq = 0;
+var u8 pai1 = 0;
+var u8 pai2 = 0;
+var u8 acumulador1 = 0;
+var u8 acumulador2 = 0;
+par do
+	/* no raiz */
+	if nodeId == 11 then
+
+		usrMsg_t(msgRadio1,1);
+		usrMsg_t(msgRadio2,1);
+
+		/* envio de requisicoes */
+		loop do
+			msgRadio1_source = nodeId;
+			msgRadio1_target = BROADCAST;
+			msgRadio1_d8_1 = 0; /* 0-> request ; 1 -> answer */
+			lastReq = lastReq + 1;
+			msgRadio1_id = lastReq;
+			emit Q_PUT (msgRadio1);
+			/* par/or do
+			await SEND_DONE;
+			with
+			await 5s;
+			end */ 
+			emit LED0(3);
+			acumulador1 = 0;
+			acumulador2 = 0;
+			await 10s;
+		end
+	else
+		par do
+			usrMsg_t(msgRadio2,1);
+			loop do
+				await RECEIVE;
+				emit LED2(3);
+				/* requisicao */
+				if msgRadio2_d8_1==0 then
+					/* sendo a primeira requisicao, setamos os pais */
+					if pai1 == 0  then
+						pai1 = msgRadio2_source;
+					else/if pai2 == 0  then
+						pai2 = msgRadio2_source;
+					end
+					emit REQ_CUSTOM_A(1);
+				else
+					msgRadio2_target = pai1;
+					par/or do
+						emit Q_PUT (msgRadio2);
+						
+					with
+						await 5s;
+						msgRadio2_target = pai2;
+						emit Q_PUT(msgRadio2);
+					end
+				end
+			end
+		with
+			loop do
+				await CUSTOM_A ;
+				await 10s;
+				/* envia resposta se nao for duplicada */
+				if msgRadio2_source==pai1 or msgRadio2_source==pai2  then
+					par do
+						/* so atende novas requisicoes dos pais */
+						lastReq = msgRadio2_id;
+						emit REQ_PHOTO();
+						usrMsg_t(msgRadio4,1);
+						msgRadio4_source = nodeId;
+						msgRadio4_target = pai1;
+						msgRadio4_d8_1 = 1; /* resposta */
+						msgRadio4_d8_3 = await PHOTO;
+						par/or do
+							emit Q_PUT (msgRadio4);
+						with
+							await 5s;
+							msgRadio4_target = pai2;
+							emit Q_PUT (msgRadio4);
+						/*	par/or do
+								emit SEND (msgRadio4);
+								await SEND_DONE;
+							with
+								await 5s;
+							end */
+						end
+						//await 1s;
+					with
+						msgRadio2_source = nodeId;
+						emit Q_PUT (msgRadio2);
+
+						/*par/or do
+							await SEND_DONE;
+						with
+							await 5s;*/
+						end
+						emit LED0(3);
+						await 1ms;
+					end
+				end
+			end
+		end
+	end
+with
+
+	usrMsg_t(msgRadioQ, 1);
+	u8 x ;
+	loop do
+		await Q_READY ;
+
+		loop/or do
+			Q_GET(msgRadioQ);
+			if msgRadioQ_d8_target == BROADCAST then
+				emit SEND(msgRadioQ);
+				await SEND_DONE;
+			else
+				emit SEND_ACK(msgRadioQ);
+				x = await SEND_DONE_ACK ;
+				if x == true then
+
+				end
+			end
+
+			await 50ms ;
+
+		end
+
+	end
+end

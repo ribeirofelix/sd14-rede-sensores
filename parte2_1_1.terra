@@ -46,14 +46,9 @@ par do
 					emit REQ_CUSTOM_A(1);
 				else
 					msgRadio2_target = pai1;
-					par/or do
-						emit Q_PUT (msgRadio2);
-						
-					with
-						await 5s;
-						msgRadio2_target = pai2;
-						emit Q_PUT(msgRadio2);
-					end
+					emit Q_PUT (msgRadio2);
+					msgRadio2_target = pai2;
+					emit Q_PUT(msgRadio2);
 				end
 			end
 		with
@@ -71,20 +66,11 @@ par do
 						msgRadio4_target = pai1;
 						msgRadio4_d8_1 = 1; /* resposta */
 						msgRadio4_d8_3 = await PHOTO;
-						par/or do
-							emit Q_PUT (msgRadio4);
-						with
-							await 5s;
-							msgRadio4_target = pai2;
-							emit Q_PUT (msgRadio4);
-						/*	par/or do
-								emit SEND (msgRadio4);
-								await SEND_DONE;
-							with
-								await 5s;
-							end */
-						end
-						//await 1s;
+					
+						emit Q_PUT (msgRadio4);
+						msgRadio4_target = pai2;
+						emit Q_PUT (msgRadio4);
+						
 					with
 						msgRadio2_source = nodeId;
 						emit Q_PUT (msgRadio2);
@@ -113,7 +99,7 @@ with
 				loop do
 					emit SEND_ACK(msgRadio4);
 					x = await SEND_DONE_ACK ;
-					if x then
+					if x or try == 3 then
 						break;
 					else
 						try = try + 1 ;

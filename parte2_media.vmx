@@ -1,4 +1,4 @@
-205 835 839 1028 1028 1028 5 3 0 24
+206 842 844 1036 1036 1036 5 3 0 24
 00 | 0000 0 track:0
 00 | 0001 0
 00 | 0002 0
@@ -83,947 +83,955 @@
 00 | 0081 0057 pai1
 00 | 0082 0058 pai2
 00 | 0083 0059 acumulador1
-00 | 0084 0060 acumulador2
-00 | 0085 0061 myHop
-00 | 0086 0062 msgRadio2_id
-00 | 0087 0063 msgRadio2_source
-00 | 0088 0064 
-00 | 0089 0065 msgRadio2_target
-00 | 0090 0066 
-00 | 0091 0067 msgRadio2_d8_1
-00 | 0092 0068 msgRadio2_d8_2
-00 | 0093 0069 msgRadio2_d8_3
-00 | 0094 0070 msgRadio2_d8_4
-00 | 0095 0071 msgRadio2_d16_1
-00 | 0096 0072 
-00 | 0097 0073 msgRadio2_d16_2
-00 | 0098 0074 
-00 | 0099 0075 msgRadio2_d16_3
-00 | 0100 0076 
-00 | 0101 0077 msgRadio2_d16_4
-00 | 0102 0078 
-00 | 0103 0079 msgRadio2_d32_1
-00 | 0104 0080 
+00 | 0084 0060 
+00 | 0085 0061 acumulador2
+00 | 0086 0062 myHop
+00 | 0087 0063 msgRadio2_id
+00 | 0088 0064 msgRadio2_source
+00 | 0089 0065 
+00 | 0090 0066 msgRadio2_target
+00 | 0091 0067 
+00 | 0092 0068 msgRadio2_d8_1
+00 | 0093 0069 msgRadio2_d8_2
+00 | 0094 0070 msgRadio2_d8_3
+00 | 0095 0071 msgRadio2_d8_4
+00 | 0096 0072 msgRadio2_d16_1
+00 | 0097 0073 
+00 | 0098 0074 msgRadio2_d16_2
+00 | 0099 0075 
+00 | 0100 0076 msgRadio2_d16_3
+00 | 0101 0077 
+00 | 0102 0078 msgRadio2_d16_4
+00 | 0103 0079 
+00 | 0104 0080 msgRadio2_d32_1
 00 | 0105 0081 
 00 | 0106 0082 
-00 | 0107 0083 msgRadio2_d32_2
-00 | 0108 0084 
+00 | 0107 0083 
+00 | 0108 0084 msgRadio2_d32_2
 00 | 0109 0085 
 00 | 0110 0086 
-00 | 0111 0087 msgRadio2
-00 | 0112 0088 
-00 | 0113 0089 msgRadio2_id
-00 | 0114 0090 msgRadio2_source
-00 | 0115 0091 
-00 | 0116 0092 msgRadio2_target
-00 | 0117 0093 
-00 | 0118 0094 msgRadio2_d8_1
-00 | 0119 0095 msgRadio2_d8_2
-00 | 0120 0096 msgRadio2_d8_3
-00 | 0121 0097 msgRadio2_d8_4
-00 | 0122 0098 msgRadio2_d16_1
-00 | 0123 0099 
-00 | 0124 0100 msgRadio2_d16_2
-00 | 0125 0101 
-00 | 0126 0102 msgRadio2_d16_3
-00 | 0127 0103 
-00 | 0128 0104 msgRadio2_d16_4
-00 | 0129 0105 
-00 | 0130 0106 msgRadio2_d32_1
-00 | 0131 0107 
+00 | 0111 0087 
+00 | 0112 0088 msgRadio2
+00 | 0113 0089 
+00 | 0114 0090 msgRadio2_id
+00 | 0115 0091 msgRadio2_source
+00 | 0116 0092 
+00 | 0117 0093 msgRadio2_target
+00 | 0118 0094 
+00 | 0119 0095 msgRadio2_d8_1
+00 | 0120 0096 msgRadio2_d8_2
+00 | 0121 0097 msgRadio2_d8_3
+00 | 0122 0098 msgRadio2_d8_4
+00 | 0123 0099 msgRadio2_d16_1
+00 | 0124 0100 
+00 | 0125 0101 msgRadio2_d16_2
+00 | 0126 0102 
+00 | 0127 0103 msgRadio2_d16_3
+00 | 0128 0104 
+00 | 0129 0105 msgRadio2_d16_4
+00 | 0130 0106 
+00 | 0131 0107 msgRadio2_d32_1
 00 | 0132 0108 
 00 | 0133 0109 
-00 | 0134 0110 msgRadio2_d32_2
-00 | 0135 0111 
+00 | 0134 0110 
+00 | 0135 0111 msgRadio2_d32_2
 00 | 0136 0112 
 00 | 0137 0113 
-00 | 0138 0114 msgRadio2
-00 | 0139 0115 
-00 | 0140 0116 x
-00 | 0141 0117 msgRadio4_id
-00 | 0142 0118 msgRadio4_source
-00 | 0143 0119 
-00 | 0144 0120 msgRadio4_target
-00 | 0145 0121 
-00 | 0146 0122 msgRadio4_d8_1
-00 | 0147 0123 msgRadio4_d8_2
-00 | 0148 0124 msgRadio4_d8_3
-00 | 0149 0125 msgRadio4_d8_4
-00 | 0150 0126 msgRadio4_d16_1
-00 | 0151 0127 
-00 | 0152 0128 msgRadio4_d16_2
-00 | 0153 0129 
-00 | 0154 0130 msgRadio4_d16_3
-00 | 0155 0131 
-00 | 0156 0132 msgRadio4_d16_4
-00 | 0157 0133 
-00 | 0158 0134 msgRadio4_d32_1
-00 | 0159 0135 
+00 | 0138 0114 
+00 | 0139 0115 msgRadio2
+00 | 0140 0116 
+00 | 0141 0117 x
+00 | 0142 0118 msgRadio4_id
+00 | 0143 0119 msgRadio4_source
+00 | 0144 0120 
+00 | 0145 0121 msgRadio4_target
+00 | 0146 0122 
+00 | 0147 0123 msgRadio4_d8_1
+00 | 0148 0124 msgRadio4_d8_2
+00 | 0149 0125 msgRadio4_d8_3
+00 | 0150 0126 msgRadio4_d8_4
+00 | 0151 0127 msgRadio4_d16_1
+00 | 0152 0128 
+00 | 0153 0129 msgRadio4_d16_2
+00 | 0154 0130 
+00 | 0155 0131 msgRadio4_d16_3
+00 | 0156 0132 
+00 | 0157 0133 msgRadio4_d16_4
+00 | 0158 0134 
+00 | 0159 0135 msgRadio4_d32_1
 00 | 0160 0136 
 00 | 0161 0137 
-00 | 0162 0138 msgRadio4_d32_2
-00 | 0163 0139 
+00 | 0162 0138 
+00 | 0163 0139 msgRadio4_d32_2
 00 | 0164 0140 
 00 | 0165 0141 
-00 | 0166 0142 msgRadio4
-00 | 0167 0143 
-00 | 0168 0144 size
-00 | 0169 0145 size_t
-00 | 0170 0146 
-00 | 0171 0147 try
-00 | 0172 0148 lumus
-00 | 0173 0149 msgRadio4_id
-00 | 0174 0150 msgRadio4_source
-00 | 0175 0151 
-00 | 0176 0152 msgRadio4_target
-00 | 0177 0153 
-00 | 0178 0154 msgRadio4_d8_1
-00 | 0179 0155 msgRadio4_d8_2
-00 | 0180 0156 msgRadio4_d8_3
-00 | 0181 0157 msgRadio4_d8_4
-00 | 0182 0158 msgRadio4_d16_1
-00 | 0183 0159 
-00 | 0184 0160 msgRadio4_d16_2
-00 | 0185 0161 
-00 | 0186 0162 msgRadio4_d16_3
-00 | 0187 0163 
-00 | 0188 0164 msgRadio4_d16_4
-00 | 0189 0165 
-00 | 0190 0166 msgRadio4_d32_1
-00 | 0191 0167 
+00 | 0166 0142 
+00 | 0167 0143 msgRadio4
+00 | 0168 0144 
+00 | 0169 0145 size
+00 | 0170 0146 size_t
+00 | 0171 0147 
+00 | 0172 0148 try
+00 | 0173 0149 lumus
+00 | 0174 0150 msgRadio4_id
+00 | 0175 0151 msgRadio4_source
+00 | 0176 0152 
+00 | 0177 0153 msgRadio4_target
+00 | 0178 0154 
+00 | 0179 0155 msgRadio4_d8_1
+00 | 0180 0156 msgRadio4_d8_2
+00 | 0181 0157 msgRadio4_d8_3
+00 | 0182 0158 msgRadio4_d8_4
+00 | 0183 0159 msgRadio4_d16_1
+00 | 0184 0160 
+00 | 0185 0161 msgRadio4_d16_2
+00 | 0186 0162 
+00 | 0187 0163 msgRadio4_d16_3
+00 | 0188 0164 
+00 | 0189 0165 msgRadio4_d16_4
+00 | 0190 0166 
+00 | 0191 0167 msgRadio4_d32_1
 00 | 0192 0168 
 00 | 0193 0169 
-00 | 0194 0170 msgRadio4_d32_2
-00 | 0195 0171 
+00 | 0194 0170 
+00 | 0195 0171 msgRadio4_d32_2
 00 | 0196 0172 
 00 | 0197 0173 
-00 | 0198 0174 msgRadio4
-00 | 0199 0175 
-00 | 0200 0176 timeout
-00 | 0201 0177 
-00 | 0202 0178 qtdnos
-00 | 0203 0179 ParAnd_flag[2]
-00 | 0204 0180 
-68 | 0205 68 memclr 0 52                   | clear all gates
-00 | 0206 00 
-34 | 0207 34 
-a0 | 0208 a0 set_c u8 25 1                 | config gate PHOTO with 1 await(s)
-19 | 0209 19 
-01 | 0210 01 
-a0 | 0211 a0 set_c u8 29 1                 | config gate SEND_DONE with 1 await(s)
-1d | 0212 1d 
-01 | 0213 01 
-a0 | 0214 a0 set_c u8 32 2                 | config gate SEND_DONE_ACK with 2 await(s)
-20 | 0215 20 
-02 | 0216 02 
-a0 | 0217 a0 set_c u8 37 2                 | config gate RECEIVE with 2 await(s)
-25 | 0218 25 
-02 | 0219 02 
-a0 | 0220 a0 set_c u8 42 1                 | config gate Q_READY with 1 await(s)
-2a | 0221 2a 
-01 | 0222 01 
-a0 | 0223 a0 set_c u8 49 1                 | config gate CUSTOM_A with 1 await(s)
-31 | 0224 31 
-01 | 0225 01 
-91 | 0226 91 outevtx_v 0 2 u16 54          | emit INIT len=2 var=nodeId
-00 | 0227 00 
-02 | 0228 02 
-36 | 0229 36 
-a0 | 0230 a0 set_c u8 56 0                 | lastReq = 0
-38 | 0231 38 
-00 | 0232 00 
-a0 | 0233 a0 set_c u8 57 0                 | pai1 = 0
-39 | 0234 39 
-00 | 0235 00 
-a0 | 0236 a0 set_c u8 58 0                 | pai2 = 0
-3a | 0237 3a 
-00 | 0238 00 
-a0 | 0239 a0 set_c u8 59 0                 | acumulador1 = 0
-3b | 0240 3b 
-00 | 0241 00 
-a0 | 0242 a0 set_c u8 60 0                 | acumulador2 = 0
-3c | 0243 3c 
-00 | 0244 00 
-a0 | 0245 a0 set_c u8 61 0                 | myHop = 0
-3d | 0246 3d 
-00 | 0247 00 
-e0 | 0248 e0 tkins_max 0 14                | insert track ParEver_sub_1_14
-0e | 0249 0e 
-e0 | 0250 e0 tkins_max 0 15                | insert track ParEver_sub_2_15
-0f | 0251 0f 
-e0 | 0252 e0 tkins_max 0 16                | insert track ParEver_sub_3_16
-10 | 0253 10 
-01 | 0254 01 end                           | end
-1c | 0255 1c push_c 11                     | push 11
-0b | 0256 0b 
-2d | 0257 2d pushx_vu u16 54               | push nodeId:u16
-36 | 0258 36 
-0d | 0259 0d eq                            | eq
-80 | 0260 80 ifelse 92 93                  | ifelse True_92 False_93
-5c | 0261 5c 
-5d | 0262 5d 
-a0 | 0263 a0 set_c u8 57 1                 | pai1 = 1
-39 | 0264 39 
-01 | 0265 01 
-a0 | 0266 a0 set_c u8 58 1                 | pai2 = 1
-3a | 0267 3a 
-01 | 0268 01 
-a0 | 0269 a0 set_c u8 62 1                 | msgRadio1_id = 1
-3e | 0270 3e 
-01 | 0271 01 
-1c | 0272 1c push_c 62                     | push &msgRadio1_id
-3e | 0273 3e 
-55 | 0274 55 popx_u u16 87                 | pop *msgRadio1
-57 | 0275 57 
-a0 | 0276 a0 set_c u8 89 1                 | msgRadio2_id = 1
-59 | 0277 59 
-01 | 0278 01 
-1c | 0279 1c push_c 89                     | push &msgRadio2_id
-59 | 0280 59 
-55 | 0281 55 popx_u u16 114                | pop *msgRadio2
-72 | 0282 72 
-b4 | 0283 b4 set_v u16 63 54               | msgRadio1_source=nodeId
-3f | 0284 3f 
-36 | 0285 36 
-a4 | 0286 a4 set_c u16 65 0xffff           | msgRadio1_target = 0xffff
-41 | 0287 41 
-ff | 0288 ff 
+00 | 0198 0174 
+00 | 0199 0175 msgRadio4
+00 | 0200 0176 
+00 | 0201 0177 timeout
+00 | 0202 0178 
+00 | 0203 0179 qtdnos
+00 | 0204 0180 ParAnd_flag[2]
+00 | 0205 0181 
+68 | 0206 68 memclr 0 52                   | clear all gates
+00 | 0207 00 
+34 | 0208 34 
+a0 | 0209 a0 set_c u8 25 1                 | config gate PHOTO with 1 await(s)
+19 | 0210 19 
+01 | 0211 01 
+a0 | 0212 a0 set_c u8 29 1                 | config gate SEND_DONE with 1 await(s)
+1d | 0213 1d 
+01 | 0214 01 
+a0 | 0215 a0 set_c u8 32 2                 | config gate SEND_DONE_ACK with 2 await(s)
+20 | 0216 20 
+02 | 0217 02 
+a0 | 0218 a0 set_c u8 37 2                 | config gate RECEIVE with 2 await(s)
+25 | 0219 25 
+02 | 0220 02 
+a0 | 0221 a0 set_c u8 42 1                 | config gate Q_READY with 1 await(s)
+2a | 0222 2a 
+01 | 0223 01 
+a0 | 0224 a0 set_c u8 49 1                 | config gate CUSTOM_A with 1 await(s)
+31 | 0225 31 
+01 | 0226 01 
+91 | 0227 91 outevtx_v 0 2 u16 54          | emit INIT len=2 var=nodeId
+00 | 0228 00 
+02 | 0229 02 
+36 | 0230 36 
+a0 | 0231 a0 set_c u8 56 0                 | lastReq = 0
+38 | 0232 38 
+00 | 0233 00 
+a0 | 0234 a0 set_c u8 57 0                 | pai1 = 0
+39 | 0235 39 
+00 | 0236 00 
+a0 | 0237 a0 set_c u8 58 0                 | pai2 = 0
+3a | 0238 3a 
+00 | 0239 00 
+a5 | 0240 a5 set_c u16 59 0                | acumulador1 = 0
+3b | 0241 3b 
+00 | 0242 00 
+a0 | 0243 a0 set_c u8 61 0                 | acumulador2 = 0
+3d | 0244 3d 
+00 | 0245 00 
+a0 | 0246 a0 set_c u8 62 0                 | myHop = 0
+3e | 0247 3e 
+00 | 0248 00 
+e0 | 0249 e0 tkins_max 0 14                | insert track ParEver_sub_1_14
+0e | 0250 0e 
+e0 | 0251 e0 tkins_max 0 15                | insert track ParEver_sub_2_15
+0f | 0252 0f 
+e0 | 0253 e0 tkins_max 0 16                | insert track ParEver_sub_3_16
+10 | 0254 10 
+01 | 0255 01 end                           | end
+1c | 0256 1c push_c 11                     | push 11
+0b | 0257 0b 
+2d | 0258 2d pushx_vu u16 54               | push nodeId:u16
+36 | 0259 36 
+0d | 0260 0d eq                            | eq
+80 | 0261 80 ifelse 92 93                  | ifelse True_92 False_93
+5c | 0262 5c 
+5d | 0263 5d 
+a0 | 0264 a0 set_c u8 57 1                 | pai1 = 1
+39 | 0265 39 
+01 | 0266 01 
+a0 | 0267 a0 set_c u8 58 1                 | pai2 = 1
+3a | 0268 3a 
+01 | 0269 01 
+a0 | 0270 a0 set_c u8 63 1                 | msgRadio1_id = 1
+3f | 0271 3f 
+01 | 0272 01 
+1c | 0273 1c push_c 63                     | push &msgRadio1_id
+3f | 0274 3f 
+55 | 0275 55 popx_u u16 88                 | pop *msgRadio1
+58 | 0276 58 
+a0 | 0277 a0 set_c u8 90 1                 | msgRadio2_id = 1
+5a | 0278 5a 
+01 | 0279 01 
+1c | 0280 1c push_c 90                     | push &msgRadio2_id
+5a | 0281 5a 
+55 | 0282 55 popx_u u16 115                | pop *msgRadio2
+73 | 0283 73 
+b4 | 0284 b4 set_v u16 64 54               | msgRadio1_source=nodeId
+40 | 0285 40 
+36 | 0286 36 
+a4 | 0287 a4 set_c u16 66 0xffff           | msgRadio1_target = 0xffff
+42 | 0288 42 
 ff | 0289 ff 
-a0 | 0290 a0 set_c u8 67 0                 | msgRadio1_d8_1 = 0
-43 | 0291 43 
-00 | 0292 00 
-a0 | 0293 a0 set_c u8 61 1                 | myHop = 1
-3d | 0294 3d 
-01 | 0295 01 
-b0 | 0296 b0 set_v u8 68 61                | msgRadio1_d8_2=myHop
-44 | 0297 44 
-3d | 0298 3d 
-1c | 0299 1c push_c 1                      | push 1
-01 | 0300 01 
-2c | 0301 2c pushx_vu u8 56                | push lastReq:u8
-38 | 0302 38 
-04 | 0303 04 add                           | add
-54 | 0304 54 popx_u u8 56                  | pop lastReq
-38 | 0305 38 
-b0 | 0306 b0 set_v u8 62 56                | msgRadio1_id=lastReq
-3e | 0307 3e 
-38 | 0308 38 
-90 | 0309 90 outevtx_v 19 25 _msgRadio1_t* 87  | emit Q_PUT len=25 var=msgRadio1
-13 | 0310 13 
-19 | 0311 19 
-57 | 0312 57 
-8c | 0313 8c outevtx_c 18 1 1              | emit REQ_CUSTOM_A len=1 const=1
-12 | 0314 12 
-01 | 0315 01 
+ff | 0290 ff 
+a0 | 0291 a0 set_c u8 68 0                 | msgRadio1_d8_1 = 0
+44 | 0292 44 
+00 | 0293 00 
+a0 | 0294 a0 set_c u8 62 1                 | myHop = 1
+3e | 0295 3e 
+01 | 0296 01 
+b0 | 0297 b0 set_v u8 69 62                | msgRadio1_d8_2=myHop
+45 | 0298 45 
+3e | 0299 3e 
+1c | 0300 1c push_c 1                      | push 1
+01 | 0301 01 
+2c | 0302 2c pushx_vu u8 56                | push lastReq:u8
+38 | 0303 38 
+04 | 0304 04 add                           | add
+54 | 0305 54 popx_u u8 56                  | pop lastReq
+38 | 0306 38 
+b0 | 0307 b0 set_v u8 63 56                | msgRadio1_id=lastReq
+3f | 0308 3f 
+38 | 0309 38 
+90 | 0310 90 outevtx_v 19 25 _msgRadio1_t* 88  | emit Q_PUT len=25 var=msgRadio1
+13 | 0311 13 
+19 | 0312 19 
+58 | 0313 58 
+8c | 0314 8c outevtx_c 18 1 1              | emit REQ_CUSTOM_A len=1 const=1
+12 | 0315 12 
 01 | 0316 01 
-c2 | 0317 c2 clken_c 0 70000 48            | clock enable Awake_70000000_48 70000msec
-00 | 0318 00 
-01 | 0319 01 
-11 | 0320 11 
-70 | 0321 70 
-30 | 0322 30 
-01 | 0323 01 end                           | end
-7c | 0324 7c exec 29                       | goto u8 29
-1d | 0325 1d 
-68 | 0326 68 memclr 0 8                    | clear WClocks gates from 0 to 1
-00 | 0327 00 
-08 | 0328 08 
-7c | 0329 7c exec 94                       | goto u8 94
-5e | 0330 5e 
-a0 | 0331 a0 set_c u8 62 1                 | msgRadio2_id = 1
-3e | 0332 3e 
-01 | 0333 01 
-1c | 0334 1c push_c 62                     | push &msgRadio2_id
-3e | 0335 3e 
-55 | 0336 55 popx_u u16 87                 | pop *msgRadio2
-57 | 0337 57 
-a5 | 0338 a5 set_c u16 38 56               | await RECEIVE[0]
-26 | 0339 26 
-38 | 0340 38 
-01 | 0341 01 end                           | end
-6c | 0342 6c getextdt_p 87 25              | get Ext Data *msgRadio2 25
-57 | 0343 57 
-19 | 0344 19 
-1c | 0345 1c push_c 0                      | push 0
-00 | 0346 00 
-2c | 0347 2c pushx_vu u8 67                | push msgRadio2_d8_1:u8
-43 | 0348 43 
-0d | 0349 0d eq                            | eq
-80 | 0350 80 ifelse 90 91                  | ifelse True_90 EndIf_91
-5a | 0351 5a 
-5b | 0352 5b 
-1c | 0353 1c push_c 0                      | push 0
-00 | 0354 00 
-2c | 0355 2c pushx_vu u8 57                | push pai1:u8
-39 | 0356 39 
-0d | 0357 0d eq                            | eq
-80 | 0358 80 ifelse 68 69                  | ifelse True_68 False_69
-44 | 0359 44 
-45 | 0360 45 
-2d | 0361 2d pushx_vu u16 63               | push msgRadio2_source:u16
-3f | 0362 3f 
-54 | 0363 54 popx_u u8 57                  | pop pai1
-39 | 0364 39 
-1c | 0365 1c push_c 1                      | push 1
-01 | 0366 01 
-2c | 0367 2c pushx_vu u8 68                | push msgRadio2_d8_2:u8
-44 | 0368 44 
-04 | 0369 04 add                           | add
-54 | 0370 54 popx_u u8 61                  | pop myHop
-3d | 0371 3d 
-7c | 0372 7c exec 70                       | goto u8 70
-46 | 0373 46 
-1c | 0374 1c push_c 0                      | push 0
-00 | 0375 00 
-2c | 0376 2c pushx_vu u8 58                | push pai2:u8
-3a | 0377 3a 
-0d | 0378 0d eq                            | eq
-80 | 0379 80 ifelse 66 67                  | ifelse True_66 EndIf_67
-42 | 0380 42 
-43 | 0381 43 
-2d | 0382 2d pushx_vu u16 63               | push msgRadio2_source:u16
-3f | 0383 3f 
-54 | 0384 54 popx_u u8 58                  | pop pai2
-3a | 0385 3a 
-7c | 0386 7c exec 67                       | goto u8 67
-43 | 0387 43 
-7c | 0388 7c exec 70                       | goto u8 70
-46 | 0389 46 
-2c | 0390 2c pushx_vu u8 56                | push lastReq:u8
-38 | 0391 38 
-2c | 0392 2c pushx_vu u8 62                | push msgRadio2_id:u8
-3e | 0393 3e 
-11 | 0394 11 gt                            | gt
-2c | 0395 2c pushx_vu u8 58                | push pai2:u8
-3a | 0396 3a 
-2d | 0397 2d pushx_vu u16 63               | push msgRadio2_source:u16
-3f | 0398 3f 
-0d | 0399 0d eq                            | eq
-14 | 0400 14 land                          | land
-2c | 0401 2c pushx_vu u8 57                | push pai1:u8
-39 | 0402 39 
-2d | 0403 2d pushx_vu u16 63               | push msgRadio2_source:u16
-3f | 0404 3f 
-0d | 0405 0d eq                            | eq
-13 | 0406 13 lor                           | lor
-80 | 0407 80 ifelse 88 89                  | ifelse True_88 EndIf_89
-58 | 0408 58 
-59 | 0409 59 
-b0 | 0410 b0 set_v u8 56 62                | lastReq=msgRadio2_id
-38 | 0411 38 
-3e | 0412 3e 
-b4 | 0413 b4 set_v u16 63 54               | msgRadio2_source=nodeId
-3f | 0414 3f 
-36 | 0415 36 
-b0 | 0416 b0 set_v u8 68 61                | msgRadio2_d8_2=myHop
-44 | 0417 44 
-3d | 0418 3d 
-90 | 0419 90 outevtx_v 19 25 _msgRadio2_t* 87  | emit Q_PUT len=25 var=msgRadio2
-13 | 0420 13 
-19 | 0421 19 
-57 | 0422 57 
-8c | 0423 8c outevtx_c 18 1 1              | emit REQ_CUSTOM_A len=1 const=1
-12 | 0424 12 
-01 | 0425 01 
+01 | 0317 01 
+c2 | 0318 c2 clken_c 0 70000 48            | clock enable Awake_70000000_48 70000msec
+00 | 0319 00 
+01 | 0320 01 
+11 | 0321 11 
+70 | 0322 70 
+30 | 0323 30 
+01 | 0324 01 end                           | end
+7c | 0325 7c exec 29                       | goto u8 29
+1d | 0326 1d 
+68 | 0327 68 memclr 0 8                    | clear WClocks gates from 0 to 1
+00 | 0328 00 
+08 | 0329 08 
+7c | 0330 7c exec 94                       | goto u8 94
+5e | 0331 5e 
+a0 | 0332 a0 set_c u8 63 1                 | msgRadio2_id = 1
+3f | 0333 3f 
+01 | 0334 01 
+1c | 0335 1c push_c 63                     | push &msgRadio2_id
+3f | 0336 3f 
+55 | 0337 55 popx_u u16 88                 | pop *msgRadio2
+58 | 0338 58 
+a5 | 0339 a5 set_c u16 38 56               | await RECEIVE[0]
+26 | 0340 26 
+38 | 0341 38 
+01 | 0342 01 end                           | end
+6c | 0343 6c getextdt_p 88 25              | get Ext Data *msgRadio2 25
+58 | 0344 58 
+19 | 0345 19 
+1c | 0346 1c push_c 0                      | push 0
+00 | 0347 00 
+2c | 0348 2c pushx_vu u8 68                | push msgRadio2_d8_1:u8
+44 | 0349 44 
+0d | 0350 0d eq                            | eq
+80 | 0351 80 ifelse 90 91                  | ifelse True_90 EndIf_91
+5a | 0352 5a 
+5b | 0353 5b 
+1c | 0354 1c push_c 0                      | push 0
+00 | 0355 00 
+2c | 0356 2c pushx_vu u8 57                | push pai1:u8
+39 | 0357 39 
+0d | 0358 0d eq                            | eq
+80 | 0359 80 ifelse 68 69                  | ifelse True_68 False_69
+44 | 0360 44 
+45 | 0361 45 
+2d | 0362 2d pushx_vu u16 64               | push msgRadio2_source:u16
+40 | 0363 40 
+54 | 0364 54 popx_u u8 57                  | pop pai1
+39 | 0365 39 
+1c | 0366 1c push_c 1                      | push 1
+01 | 0367 01 
+2c | 0368 2c pushx_vu u8 69                | push msgRadio2_d8_2:u8
+45 | 0369 45 
+04 | 0370 04 add                           | add
+54 | 0371 54 popx_u u8 62                  | pop myHop
+3e | 0372 3e 
+7c | 0373 7c exec 70                       | goto u8 70
+46 | 0374 46 
+1c | 0375 1c push_c 0                      | push 0
+00 | 0376 00 
+2c | 0377 2c pushx_vu u8 58                | push pai2:u8
+3a | 0378 3a 
+0d | 0379 0d eq                            | eq
+80 | 0380 80 ifelse 66 67                  | ifelse True_66 EndIf_67
+42 | 0381 42 
+43 | 0382 43 
+2d | 0383 2d pushx_vu u16 64               | push msgRadio2_source:u16
+40 | 0384 40 
+54 | 0385 54 popx_u u8 58                  | pop pai2
+3a | 0386 3a 
+7c | 0387 7c exec 67                       | goto u8 67
+43 | 0388 43 
+7c | 0389 7c exec 70                       | goto u8 70
+46 | 0390 46 
+2c | 0391 2c pushx_vu u8 56                | push lastReq:u8
+38 | 0392 38 
+2c | 0393 2c pushx_vu u8 63                | push msgRadio2_id:u8
+3f | 0394 3f 
+11 | 0395 11 gt                            | gt
+2c | 0396 2c pushx_vu u8 58                | push pai2:u8
+3a | 0397 3a 
+2d | 0398 2d pushx_vu u16 64               | push msgRadio2_source:u16
+40 | 0399 40 
+0d | 0400 0d eq                            | eq
+14 | 0401 14 land                          | land
+2c | 0402 2c pushx_vu u8 57                | push pai1:u8
+39 | 0403 39 
+2d | 0404 2d pushx_vu u16 64               | push msgRadio2_source:u16
+40 | 0405 40 
+0d | 0406 0d eq                            | eq
+13 | 0407 13 lor                           | lor
+80 | 0408 80 ifelse 88 89                  | ifelse True_88 EndIf_89
+58 | 0409 58 
+59 | 0410 59 
+b0 | 0411 b0 set_v u8 56 63                | lastReq=msgRadio2_id
+38 | 0412 38 
+3f | 0413 3f 
+b4 | 0414 b4 set_v u16 64 54               | msgRadio2_source=nodeId
+40 | 0415 40 
+36 | 0416 36 
+b0 | 0417 b0 set_v u8 69 62                | msgRadio2_d8_2=myHop
+45 | 0418 45 
+3e | 0419 3e 
+90 | 0420 90 outevtx_v 19 25 _msgRadio2_t* 88  | emit Q_PUT len=25 var=msgRadio2
+13 | 0421 13 
+19 | 0422 19 
+58 | 0423 58 
+8c | 0424 8c outevtx_c 18 1 1              | emit REQ_CUSTOM_A len=1 const=1
+12 | 0425 12 
 01 | 0426 01 
-7c | 0427 7c exec 89                       | goto u8 89
-59 | 0428 59 
-7c | 0429 7c exec 91                       | goto u8 91
-5b | 0430 5b 
-7c | 0431 7c exec 52                       | goto u8 52
-34 | 0432 34 
-68 | 0433 68 memclr 38 2                   | clear EXT gates for RECEIVE
-26 | 0434 26 
-02 | 0435 02 
-7c | 0436 7c exec 94                       | goto u8 94
-5e | 0437 5e 
-01 | 0438 01 end                           | end
-a0 | 0439 a0 set_c u8 117 1                | msgRadio4_id = 1
-75 | 0440 75 
-01 | 0441 01 
-1c | 0442 1c push_c 117                    | push &msgRadio4_id
-75 | 0443 75 
-55 | 0444 55 popx_u u16 142                | pop *msgRadio4
-8e | 0445 8e 
-1c | 0446 1c push_c 144                    | push &size
-90 | 0447 90 
-55 | 0448 55 popx_u u16 145                | pop *size_t
-91 | 0449 91 
-a5 | 0450 a5 set_c u16 43 103              | await Q_READY[0]
-2b | 0451 2b 
-67 | 0452 67 
-01 | 0453 01 end                           | end
-90 | 0454 90 outevtx_v 21 1 u8* 145        | emit Q_SIZE len=1 var=size_t
-15 | 0455 15 
-01 | 0456 01 
-91 | 0457 91 
-1c | 0458 1c push_c 0                      | push 0
-00 | 0459 00 
-2c | 0460 2c pushx_vu u8 144               | push size:u8
-90 | 0461 90 
-0d | 0462 0d eq                            | eq
-80 | 0463 80 ifelse 111 112                | ifelse True_111 EndIf_112
-6f | 0464 6f 
-70 | 0465 70 
-f1 | 0466 f1 tkins_z 1 9 106               | insert track Loop_out_106
-09 | 0467 09 
-6a | 0468 6a 
-01 | 0469 01 end                           | end
-7c | 0470 7c exec 112                      | goto u8 112
-70 | 0471 70 
-90 | 0472 90 outevtx_v 20 25 _msgRadio4_t* 142  | emit Q_GET len=25 var=msgRadio4
-14 | 0473 14 
-19 | 0474 19 
-8e | 0475 8e 
-1d | 0476 1d push_c 0xffff                 | push 0xffff
-ff | 0477 ff 
+01 | 0427 01 
+7c | 0428 7c exec 89                       | goto u8 89
+59 | 0429 59 
+7c | 0430 7c exec 91                       | goto u8 91
+5b | 0431 5b 
+7c | 0432 7c exec 52                       | goto u8 52
+34 | 0433 34 
+68 | 0434 68 memclr 38 2                   | clear EXT gates for RECEIVE
+26 | 0435 26 
+02 | 0436 02 
+7c | 0437 7c exec 94                       | goto u8 94
+5e | 0438 5e 
+01 | 0439 01 end                           | end
+a0 | 0440 a0 set_c u8 118 1                | msgRadio4_id = 1
+76 | 0441 76 
+01 | 0442 01 
+1c | 0443 1c push_c 118                    | push &msgRadio4_id
+76 | 0444 76 
+55 | 0445 55 popx_u u16 143                | pop *msgRadio4
+8f | 0446 8f 
+1c | 0447 1c push_c 145                    | push &size
+91 | 0448 91 
+55 | 0449 55 popx_u u16 146                | pop *size_t
+92 | 0450 92 
+a5 | 0451 a5 set_c u16 43 103              | await Q_READY[0]
+2b | 0452 2b 
+67 | 0453 67 
+01 | 0454 01 end                           | end
+90 | 0455 90 outevtx_v 21 1 u8* 146        | emit Q_SIZE len=1 var=size_t
+15 | 0456 15 
+01 | 0457 01 
+92 | 0458 92 
+1c | 0459 1c push_c 0                      | push 0
+00 | 0460 00 
+2c | 0461 2c pushx_vu u8 145               | push size:u8
+91 | 0462 91 
+0d | 0463 0d eq                            | eq
+80 | 0464 80 ifelse 111 112                | ifelse True_111 EndIf_112
+6f | 0465 6f 
+70 | 0466 70 
+f1 | 0467 f1 tkins_z 1 9 106               | insert track Loop_out_106
+09 | 0468 09 
+6a | 0469 6a 
+01 | 0470 01 end                           | end
+7c | 0471 7c exec 112                      | goto u8 112
+70 | 0472 70 
+90 | 0473 90 outevtx_v 20 25 _msgRadio4_t* 143  | emit Q_GET len=25 var=msgRadio4
+14 | 0474 14 
+19 | 0475 19 
+8f | 0476 8f 
+1d | 0477 1d push_c 0xffff                 | push 0xffff
 ff | 0478 ff 
-2d | 0479 2d pushx_vu u16 120              | push msgRadio4_target:u16
-78 | 0480 78 
-0d | 0481 0d eq                            | eq
-80 | 0482 80 ifelse 157 158                | ifelse True_157 False_158
-9d | 0483 9d 
-9e | 0484 9e 
-90 | 0485 90 outevtx_v 8 25 _msgRadio4_t* 142  | emit SEND len=25 var=msgRadio4
-08 | 0486 08 
-19 | 0487 19 
-8e | 0488 8e 
-a5 | 0489 a5 set_c u16 30 120              | await SEND_DONE[0]
-1e | 0490 1e 
-78 | 0491 78 
-01 | 0492 01 end                           | end
-7c | 0493 7c exec 159                      | goto u8 159
-9f | 0494 9f 
-a0 | 0495 a0 set_c u8 147 0                | try = 0
-93 | 0496 93 
-00 | 0497 00 
-90 | 0498 90 outevtx_v 9 25 _msgRadio4_t* 142  | emit SEND_ACK len=25 var=msgRadio4
-09 | 0499 09 
-19 | 0500 19 
-8e | 0501 8e 
-a5 | 0502 a5 set_c u16 33 129              | await SEND_DONE_ACK[0]
-21 | 0503 21 
-81 | 0504 81 
-01 | 0505 01 end                           | end
-70 | 0506 70 getextdt_v 116 1              | get Ext Data x 1
-74 | 0507 74 
-01 | 0508 01 
-1c | 0509 1c push_c 3                      | push 3
-03 | 0510 03 
-2c | 0511 2c pushx_vu u8 147               | push try:u8
-93 | 0512 93 
-0d | 0513 0d eq                            | eq
-2c | 0514 2c pushx_vu u8 116               | push x:u8
-74 | 0515 74 
-13 | 0516 13 lor                           | lor
-80 | 0517 80 ifelse 134 135                | ifelse True_134 False_135
-86 | 0518 86 
-87 | 0519 87 
-f1 | 0520 f1 tkins_z 1 14 124              | insert track Loop_out_124
-0e | 0521 0e 
-7c | 0522 7c 
-01 | 0523 01 end                           | end
-7c | 0524 7c exec 136                      | goto u8 136
-88 | 0525 88 
-1c | 0526 1c push_c 1                      | push 1
-01 | 0527 01 
-2c | 0528 2c pushx_vu u8 147               | push try:u8
-93 | 0529 93 
-04 | 0530 04 add                           | add
-54 | 0531 54 popx_u u8 147                 | pop try
-93 | 0532 93 
-7c | 0533 7c exec 136                      | goto u8 136
-88 | 0534 88 
-7c | 0535 7c exec 122                      | goto u8 122
-7a | 0536 7a 
-68 | 0537 68 memclr 33 2                   | clear EXT gates for SEND_DONE_ACK
-21 | 0538 21 
-02 | 0539 02 
-1c | 0540 1c push_c 3                      | push 3
-03 | 0541 03 
-2c | 0542 2c pushx_vu u8 147               | push try:u8
-93 | 0543 93 
-0d | 0544 0d eq                            | eq
-80 | 0545 80 ifelse 155 156                | ifelse True_155 EndIf_156
-9b | 0546 9b 
-9c | 0547 9c 
-2c | 0548 2c pushx_vu u8 58                | push pai2:u8
-3a | 0549 3a 
-55 | 0550 55 popx_u u16 120                | pop msgRadio4_target
-78 | 0551 78 
-90 | 0552 90 outevtx_v 9 25 _msgRadio4_t* 142  | emit SEND_ACK len=25 var=msgRadio4
-09 | 0553 09 
-19 | 0554 19 
-8e | 0555 8e 
-a5 | 0556 a5 set_c u16 35 147              | await SEND_DONE_ACK[1]
-23 | 0557 23 
-93 | 0558 93 
-01 | 0559 01 end                           | end
-70 | 0560 70 getextdt_v 116 1              | get Ext Data x 1
-74 | 0561 74 
-01 | 0562 01 
-1c | 0563 1c push_c 6                      | push 6
-06 | 0564 06 
-2c | 0565 2c pushx_vu u8 147               | push try:u8
-93 | 0566 93 
-0d | 0567 0d eq                            | eq
-2c | 0568 2c pushx_vu u8 116               | push x:u8
-74 | 0569 74 
-13 | 0570 13 lor                           | lor
-80 | 0571 80 ifelse 152 153                | ifelse True_152 False_153
-98 | 0572 98 
-99 | 0573 99 
-f1 | 0574 f1 tkins_z 1 16 142              | insert track Loop_out_142
-10 | 0575 10 
-8e | 0576 8e 
-01 | 0577 01 end                           | end
-7c | 0578 7c exec 154                      | goto u8 154
-9a | 0579 9a 
-1c | 0580 1c push_c 1                      | push 1
-01 | 0581 01 
-2c | 0582 2c pushx_vu u8 147               | push try:u8
-93 | 0583 93 
-04 | 0584 04 add                           | add
-54 | 0585 54 popx_u u8 147                 | pop try
-93 | 0586 93 
-7c | 0587 7c exec 154                      | goto u8 154
-9a | 0588 9a 
-7c | 0589 7c exec 140                      | goto u8 140
-8c | 0590 8c 
-68 | 0591 68 memclr 33 2                   | clear EXT gates for SEND_DONE_ACK
-21 | 0592 21 
-02 | 0593 02 
-7c | 0594 7c exec 156                      | goto u8 156
-9c | 0595 9c 
-7c | 0596 7c exec 159                      | goto u8 159
-9f | 0597 9f 
-c0 | 0598 c0 clken_c 1 50 160              | clock enable Awake_50000_160 50msec
-01 | 0599 01 
-32 | 0600 32 
-a0 | 0601 a0 
-01 | 0602 01 end                           | end
-7c | 0603 7c exec 104                      | goto u8 104
-68 | 0604 68 
-68 | 0605 68 memclr 8 8                    | clear WClocks gates from 1 to 2
-08 | 0606 08 
+ff | 0479 ff 
+2d | 0480 2d pushx_vu u16 121              | push msgRadio4_target:u16
+79 | 0481 79 
+0d | 0482 0d eq                            | eq
+80 | 0483 80 ifelse 157 158                | ifelse True_157 False_158
+9d | 0484 9d 
+9e | 0485 9e 
+90 | 0486 90 outevtx_v 8 25 _msgRadio4_t* 143  | emit SEND len=25 var=msgRadio4
+08 | 0487 08 
+19 | 0488 19 
+8f | 0489 8f 
+a5 | 0490 a5 set_c u16 30 120              | await SEND_DONE[0]
+1e | 0491 1e 
+78 | 0492 78 
+01 | 0493 01 end                           | end
+7c | 0494 7c exec 159                      | goto u8 159
+9f | 0495 9f 
+a0 | 0496 a0 set_c u8 148 0                | try = 0
+94 | 0497 94 
+00 | 0498 00 
+90 | 0499 90 outevtx_v 9 25 _msgRadio4_t* 143  | emit SEND_ACK len=25 var=msgRadio4
+09 | 0500 09 
+19 | 0501 19 
+8f | 0502 8f 
+a5 | 0503 a5 set_c u16 33 129              | await SEND_DONE_ACK[0]
+21 | 0504 21 
+81 | 0505 81 
+01 | 0506 01 end                           | end
+70 | 0507 70 getextdt_v 117 1              | get Ext Data x 1
+75 | 0508 75 
+01 | 0509 01 
+1c | 0510 1c push_c 3                      | push 3
+03 | 0511 03 
+2c | 0512 2c pushx_vu u8 148               | push try:u8
+94 | 0513 94 
+0d | 0514 0d eq                            | eq
+2c | 0515 2c pushx_vu u8 117               | push x:u8
+75 | 0516 75 
+13 | 0517 13 lor                           | lor
+80 | 0518 80 ifelse 134 135                | ifelse True_134 False_135
+86 | 0519 86 
+87 | 0520 87 
+f1 | 0521 f1 tkins_z 1 14 124              | insert track Loop_out_124
+0e | 0522 0e 
+7c | 0523 7c 
+01 | 0524 01 end                           | end
+7c | 0525 7c exec 136                      | goto u8 136
+88 | 0526 88 
+1c | 0527 1c push_c 1                      | push 1
+01 | 0528 01 
+2c | 0529 2c pushx_vu u8 148               | push try:u8
+94 | 0530 94 
+04 | 0531 04 add                           | add
+54 | 0532 54 popx_u u8 148                 | pop try
+94 | 0533 94 
+7c | 0534 7c exec 136                      | goto u8 136
+88 | 0535 88 
+7c | 0536 7c exec 122                      | goto u8 122
+7a | 0537 7a 
+68 | 0538 68 memclr 33 2                   | clear EXT gates for SEND_DONE_ACK
+21 | 0539 21 
+02 | 0540 02 
+1c | 0541 1c push_c 3                      | push 3
+03 | 0542 03 
+2c | 0543 2c pushx_vu u8 148               | push try:u8
+94 | 0544 94 
+0d | 0545 0d eq                            | eq
+80 | 0546 80 ifelse 155 156                | ifelse True_155 EndIf_156
+9b | 0547 9b 
+9c | 0548 9c 
+2c | 0549 2c pushx_vu u8 58                | push pai2:u8
+3a | 0550 3a 
+55 | 0551 55 popx_u u16 121                | pop msgRadio4_target
+79 | 0552 79 
+90 | 0553 90 outevtx_v 9 25 _msgRadio4_t* 143  | emit SEND_ACK len=25 var=msgRadio4
+09 | 0554 09 
+19 | 0555 19 
+8f | 0556 8f 
+a5 | 0557 a5 set_c u16 35 147              | await SEND_DONE_ACK[1]
+23 | 0558 23 
+93 | 0559 93 
+01 | 0560 01 end                           | end
+70 | 0561 70 getextdt_v 117 1              | get Ext Data x 1
+75 | 0562 75 
+01 | 0563 01 
+1c | 0564 1c push_c 6                      | push 6
+06 | 0565 06 
+2c | 0566 2c pushx_vu u8 148               | push try:u8
+94 | 0567 94 
+0d | 0568 0d eq                            | eq
+2c | 0569 2c pushx_vu u8 117               | push x:u8
+75 | 0570 75 
+13 | 0571 13 lor                           | lor
+80 | 0572 80 ifelse 152 153                | ifelse True_152 False_153
+98 | 0573 98 
+99 | 0574 99 
+f1 | 0575 f1 tkins_z 1 16 142              | insert track Loop_out_142
+10 | 0576 10 
+8e | 0577 8e 
+01 | 0578 01 end                           | end
+7c | 0579 7c exec 154                      | goto u8 154
+9a | 0580 9a 
+1c | 0581 1c push_c 1                      | push 1
+01 | 0582 01 
+2c | 0583 2c pushx_vu u8 148               | push try:u8
+94 | 0584 94 
+04 | 0585 04 add                           | add
+54 | 0586 54 popx_u u8 148                 | pop try
+94 | 0587 94 
+7c | 0588 7c exec 154                      | goto u8 154
+9a | 0589 9a 
+7c | 0590 7c exec 140                      | goto u8 140
+8c | 0591 8c 
+68 | 0592 68 memclr 33 2                   | clear EXT gates for SEND_DONE_ACK
+21 | 0593 21 
+02 | 0594 02 
+7c | 0595 7c exec 156                      | goto u8 156
+9c | 0596 9c 
+7c | 0597 7c exec 159                      | goto u8 159
+9f | 0598 9f 
+c0 | 0599 c0 clken_c 1 50 160              | clock enable Awake_50000_160 50msec
+01 | 0600 01 
+32 | 0601 32 
+a0 | 0602 a0 
+01 | 0603 01 end                           | end
+7c | 0604 7c exec 104                      | goto u8 104
+68 | 0605 68 
+68 | 0606 68 memclr 8 8                    | clear WClocks gates from 1 to 2
 08 | 0607 08 
-68 | 0608 68 memclr 30 2                   | clear EXT gates for SEND_DONE
-1e | 0609 1e 
-02 | 0610 02 
-68 | 0611 68 memclr 33 4                   | clear EXT gates for SEND_DONE_ACK
-21 | 0612 21 
-04 | 0613 04 
-7c | 0614 7c exec 100                      | goto u8 100
-64 | 0615 64 
-68 | 0616 68 memclr 8 8                    | clear WClocks gates from 1 to 2
-08 | 0617 08 
+08 | 0608 08 
+68 | 0609 68 memclr 30 2                   | clear EXT gates for SEND_DONE
+1e | 0610 1e 
+02 | 0611 02 
+68 | 0612 68 memclr 33 4                   | clear EXT gates for SEND_DONE_ACK
+21 | 0613 21 
+04 | 0614 04 
+7c | 0615 7c exec 100                      | goto u8 100
+64 | 0616 64 
+68 | 0617 68 memclr 8 8                    | clear WClocks gates from 1 to 2
 08 | 0618 08 
-68 | 0619 68 memclr 30 2                   | clear EXT gates for SEND_DONE
-1e | 0620 1e 
-02 | 0621 02 
-68 | 0622 68 memclr 33 4                   | clear EXT gates for SEND_DONE_ACK
-21 | 0623 21 
-04 | 0624 04 
-68 | 0625 68 memclr 43 2                   | clear EXT gates for Q_READY
-2b | 0626 2b 
-02 | 0627 02 
-01 | 0628 01 end                           | end
-a0 | 0629 a0 set_c u8 149 1                | msgRadio4_id = 1
-95 | 0630 95 
-01 | 0631 01 
-1c | 0632 1c push_c 149                    | push &msgRadio4_id
-95 | 0633 95 
-55 | 0634 55 popx_u u16 174                | pop *msgRadio4
-ae | 0635 ae 
-1c | 0636 1c push_c 1                      | push 1
-01 | 0637 01 
-2c | 0638 2c pushx_vu u8 61                | push myHop:u8
-3d | 0639 3d 
-17 | 0640 17 neg                           | neg
-04 | 0641 04 add                           | add
-1c | 0642 1c push_c 2                      | push 2
-02 | 0643 02 
-1d | 0644 1d push_c 1000                   | push 1000
-03 | 0645 03 
-e8 | 0646 e8 
-1c | 0647 1c push_c 60                     | push 60
-3c | 0648 3c 
-06 | 0649 06 mult                          | mult
-06 | 0650 06 mult                          | mult
-0c | 0651 0c bxor                          | bxor
-55 | 0652 55 popx_u u16 176                | pop timeout
-b0 | 0653 b0 
-a0 | 0654 a0 set_c u8 178 0                | qtdnos = 0
-b2 | 0655 b2 
-00 | 0656 00 
-a5 | 0657 a5 set_c u16 50 170              | await CUSTOM_A[0]
-32 | 0658 32 
-aa | 0659 aa 
-01 | 0660 01 end                           | end
-8c | 0661 8c outevtx_c 2 1 1               | emit LED0 len=1 const=1
-02 | 0662 02 
-01 | 0663 01 
+08 | 0619 08 
+68 | 0620 68 memclr 30 2                   | clear EXT gates for SEND_DONE
+1e | 0621 1e 
+02 | 0622 02 
+68 | 0623 68 memclr 33 4                   | clear EXT gates for SEND_DONE_ACK
+21 | 0624 21 
+04 | 0625 04 
+68 | 0626 68 memclr 43 2                   | clear EXT gates for Q_READY
+2b | 0627 2b 
+02 | 0628 02 
+01 | 0629 01 end                           | end
+a0 | 0630 a0 set_c u8 150 1                | msgRadio4_id = 1
+96 | 0631 96 
+01 | 0632 01 
+1c | 0633 1c push_c 150                    | push &msgRadio4_id
+96 | 0634 96 
+55 | 0635 55 popx_u u16 175                | pop *msgRadio4
+af | 0636 af 
+1c | 0637 1c push_c 1                      | push 1
+01 | 0638 01 
+2c | 0639 2c pushx_vu u8 62                | push myHop:u8
+3e | 0640 3e 
+17 | 0641 17 neg                           | neg
+04 | 0642 04 add                           | add
+1c | 0643 1c push_c 2                      | push 2
+02 | 0644 02 
+0c | 0645 0c bxor                          | bxor
+1d | 0646 1d push_c 1000                   | push 1000
+03 | 0647 03 
+e8 | 0648 e8 
+1c | 0649 1c push_c 60                     | push 60
+3c | 0650 3c 
+06 | 0651 06 mult                          | mult
+06 | 0652 06 mult                          | mult
+55 | 0653 55 popx_u u16 177                | pop timeout
+b1 | 0654 b1 
+a0 | 0655 a0 set_c u8 179 0                | qtdnos = 0
+b3 | 0656 b3 
+00 | 0657 00 
+a5 | 0658 a5 set_c u16 50 170              | await CUSTOM_A[0]
+32 | 0659 32 
+aa | 0660 aa 
+01 | 0661 01 end                           | end
+8c | 0662 8c outevtx_c 2 1 1               | emit LED0 len=1 const=1
+02 | 0663 02 
 01 | 0664 01 
-68 | 0665 68 memclr 179 2                  | clear gates from addr 179 to addr 180
-b3 | 0666 b3 
-02 | 0667 02 
-e0 | 0668 e0 tkins_max 0 173               | insert track ParAnd_sub_1_173
-ad | 0669 ad 
-e0 | 0670 e0 tkins_max 0 174               | insert track ParAnd_sub_2_174
-ae | 0671 ae 
-01 | 0672 01 end                           | end
-94 | 0673 94 outevt_z 6                    | emit REQ_PHOTO
-06 | 0674 06 
-a5 | 0675 a5 set_c u16 26 180              | await PHOTO[0]
-1a | 0676 1a 
-b4 | 0677 b4 
-01 | 0678 01 end                           | end
-70 | 0679 70 getextdt_v 148 1              | get Ext Data lumus 1
-94 | 0680 94 
-01 | 0681 01 
-a0 | 0682 a0 set_c u8 179 1                | open gate 1
-b3 | 0683 b3 
-01 | 0684 01 
-7c | 0685 7c exec 175                      | goto u8 175
-af | 0686 af 
-8c | 0687 8c outevtx_c 3 1 0               | emit LED1 len=1 const=0
-03 | 0688 03 
-01 | 0689 01 
-00 | 0690 00 
-e0 | 0691 e0 tkins_max 0 183               | insert track ParOr_sub_1_183
-b7 | 0692 b7 
-e0 | 0693 e0 tkins_max 0 184               | insert track ParOr_sub_2_184
-b8 | 0694 b8 
-01 | 0695 01 end                           | end
-a5 | 0696 a5 set_c u16 40 190              | await RECEIVE[1]
-28 | 0697 28 
-be | 0698 be 
-01 | 0699 01 end                           | end
-6c | 0700 6c getextdt_p 174 25             | get Ext Data *msgRadio4 25
-ae | 0701 ae 
-19 | 0702 19 
-2c | 0703 2c pushx_vu u8 56                | push lastReq:u8
-38 | 0704 38 
-2c | 0705 2c pushx_vu u8 149               | push msgRadio4_id:u8
-95 | 0706 95 
-0d | 0707 0d eq                            | eq
-1c | 0708 1c push_c 1                      | push 1
-01 | 0709 01 
-2c | 0710 2c pushx_vu u8 154               | push msgRadio4_d8_1:u8
-9a | 0711 9a 
-0d | 0712 0d eq                            | eq
-14 | 0713 14 land                          | land
-80 | 0714 80 ifelse 202 203                | ifelse True_202 EndIf_203
-ca | 0715 ca 
-cb | 0716 cb 
-8c | 0717 8c outevtx_c 3 1 1               | emit LED1 len=1 const=1
-03 | 0718 03 
-01 | 0719 01 
-01 | 0720 01 
-2d | 0721 2d pushx_vu u16 158              | push msgRadio4_d16_1:u16
-9e | 0722 9e 
-2c | 0723 2c pushx_vu u8 59                | push acumulador1:u8
-3b | 0724 3b 
-04 | 0725 04 add                           | add
-54 | 0726 54 popx_u u8 59                  | pop acumulador1
-3b | 0727 3b 
-2c | 0728 2c pushx_vu u8 157               | push msgRadio4_d8_4:u8
-9d | 0729 9d 
-2c | 0730 2c pushx_vu u8 60                | push acumulador2:u8
-3c | 0731 3c 
+01 | 0665 01 
+68 | 0666 68 memclr 180 2                  | clear gates from addr 180 to addr 181
+b4 | 0667 b4 
+02 | 0668 02 
+e0 | 0669 e0 tkins_max 0 173               | insert track ParAnd_sub_1_173
+ad | 0670 ad 
+e0 | 0671 e0 tkins_max 0 174               | insert track ParAnd_sub_2_174
+ae | 0672 ae 
+01 | 0673 01 end                           | end
+94 | 0674 94 outevt_z 6                    | emit REQ_PHOTO
+06 | 0675 06 
+a5 | 0676 a5 set_c u16 26 180              | await PHOTO[0]
+1a | 0677 1a 
+b4 | 0678 b4 
+01 | 0679 01 end                           | end
+70 | 0680 70 getextdt_v 149 1              | get Ext Data lumus 1
+95 | 0681 95 
+01 | 0682 01 
+a0 | 0683 a0 set_c u8 180 1                | open gate 1
+b4 | 0684 b4 
+01 | 0685 01 
+7c | 0686 7c exec 175                      | goto u8 175
+af | 0687 af 
+8c | 0688 8c outevtx_c 3 1 0               | emit LED1 len=1 const=0
+03 | 0689 03 
+01 | 0690 01 
+00 | 0691 00 
+a5 | 0692 a5 set_c u16 59 0                | acumulador1 = 0
+3b | 0693 3b 
+00 | 0694 00 
+a0 | 0695 a0 set_c u8 61 0                 | acumulador2 = 0
+3d | 0696 3d 
+00 | 0697 00 
+e0 | 0698 e0 tkins_max 0 185               | insert track ParOr_sub_1_185
+b9 | 0699 b9 
+e0 | 0700 e0 tkins_max 0 186               | insert track ParOr_sub_2_186
+ba | 0701 ba 
+01 | 0702 01 end                           | end
+a5 | 0703 a5 set_c u16 40 192              | await RECEIVE[1]
+28 | 0704 28 
+c0 | 0705 c0 
+01 | 0706 01 end                           | end
+6c | 0707 6c getextdt_p 175 25             | get Ext Data *msgRadio4 25
+af | 0708 af 
+19 | 0709 19 
+2c | 0710 2c pushx_vu u8 56                | push lastReq:u8
+38 | 0711 38 
+2c | 0712 2c pushx_vu u8 150               | push msgRadio4_id:u8
+96 | 0713 96 
+0d | 0714 0d eq                            | eq
+1c | 0715 1c push_c 1                      | push 1
+01 | 0716 01 
+2c | 0717 2c pushx_vu u8 155               | push msgRadio4_d8_1:u8
+9b | 0718 9b 
+0d | 0719 0d eq                            | eq
+14 | 0720 14 land                          | land
+80 | 0721 80 ifelse 204 205                | ifelse True_204 EndIf_205
+cc | 0722 cc 
+cd | 0723 cd 
+8c | 0724 8c outevtx_c 3 1 1               | emit LED1 len=1 const=1
+03 | 0725 03 
+01 | 0726 01 
+01 | 0727 01 
+2d | 0728 2d pushx_vu u16 159              | push msgRadio4_d16_1:u16
+9f | 0729 9f 
+2d | 0730 2d pushx_vu u16 59               | push acumulador1:u16
+3b | 0731 3b 
 04 | 0732 04 add                           | add
-54 | 0733 54 popx_u u8 60                  | pop acumulador2
-3c | 0734 3c 
-7c | 0735 7c exec 203                      | goto u8 203
-cb | 0736 cb 
-7c | 0737 7c exec 186                      | goto u8 186
-ba | 0738 ba 
-68 | 0739 68 memclr 38 2                   | clear EXT gates for RECEIVE
-26 | 0740 26 
-02 | 0741 02 
-e0 | 0742 e0 tkins_max 0 185               | insert track ParOr_out_185
-b9 | 0743 b9 
-01 | 0744 01 end                           | end
-d1 | 0745 d1 clken_v 2 1 u16 176 205       | clock enable Awake_timeout_205 176ms
-02 | 0746 02 
-01 | 0747 01 
-00 | 0748 00 
-b0 | 0749 b0 
-cd | 0750 cd 
+55 | 0733 55 popx_u u16 59                 | pop acumulador1
+3b | 0734 3b 
+2c | 0735 2c pushx_vu u8 158               | push msgRadio4_d8_4:u8
+9e | 0736 9e 
+2c | 0737 2c pushx_vu u8 61                | push acumulador2:u8
+3d | 0738 3d 
+04 | 0739 04 add                           | add
+54 | 0740 54 popx_u u8 61                  | pop acumulador2
+3d | 0741 3d 
+7c | 0742 7c exec 205                      | goto u8 205
+cd | 0743 cd 
+7c | 0744 7c exec 188                      | goto u8 188
+bc | 0745 bc 
+68 | 0746 68 memclr 38 2                   | clear EXT gates for RECEIVE
+26 | 0747 26 
+02 | 0748 02 
+e0 | 0749 e0 tkins_max 0 187               | insert track ParOr_out_187
+bb | 0750 bb 
 01 | 0751 01 end                           | end
-e0 | 0752 e0 tkins_max 0 185               | insert track ParOr_out_185
-b9 | 0753 b9 
-01 | 0754 01 end                           | end
-68 | 0755 68 memclr 16 8                   | clear WClocks gates from 2 to 3
-10 | 0756 10 
-08 | 0757 08 
-68 | 0758 68 memclr 38 2                   | clear EXT gates for RECEIVE
-26 | 0759 26 
-02 | 0760 02 
-a0 | 0761 a0 set_c u8 180 1                | open gate 2
-b4 | 0762 b4 
-01 | 0763 01 
-7c | 0764 7c exec 175                      | goto u8 175
-af | 0765 af 
-78 | 0766 78 chkret 179                    | if (gate 0 == 0) PC=PC+1
-b3 | 0767 b3 
-01 | 0768 01 end                           | end
-78 | 0769 78 chkret 180                    | if (gate 1 == 0) PC=PC+1
-b4 | 0770 b4 
-01 | 0771 01 end                           | end
-a0 | 0772 a0 set_c u8 154 1                | msgRadio4_d8_1 = 1
-9a | 0773 9a 
-01 | 0774 01 
-b0 | 0775 b0 set_v u8 149 56               | msgRadio4_id=lastReq
-95 | 0776 95 
-38 | 0777 38 
-b4 | 0778 b4 set_v u16 150 54              | msgRadio4_source=nodeId
-96 | 0779 96 
-36 | 0780 36 
-2c | 0781 2c pushx_vu u8 57                | push pai1:u8
-39 | 0782 39 
-55 | 0783 55 popx_u u16 152                | pop msgRadio4_target
-98 | 0784 98 
-a0 | 0785 a0 set_c u8 154 1                | msgRadio4_d8_1 = 1
-9a | 0786 9a 
-01 | 0787 01 
-2c | 0788 2c pushx_vu u8 148               | push lumus:u8
-94 | 0789 94 
-2c | 0790 2c pushx_vu u8 59                | push acumulador1:u8
-3b | 0791 3b 
-04 | 0792 04 add                           | add
-55 | 0793 55 popx_u u16 158                | pop msgRadio4_d16_1
-9e | 0794 9e 
-1c | 0795 1c push_c 1                      | push 1
-01 | 0796 01 
-2c | 0797 2c pushx_vu u8 60                | push acumulador2:u8
-3c | 0798 3c 
+d1 | 0752 d1 clken_v 2 1 u16 177 207       | clock enable Awake_timeout_207 177ms
+02 | 0753 02 
+01 | 0754 01 
+00 | 0755 00 
+b1 | 0756 b1 
+cf | 0757 cf 
+01 | 0758 01 end                           | end
+e0 | 0759 e0 tkins_max 0 187               | insert track ParOr_out_187
+bb | 0760 bb 
+01 | 0761 01 end                           | end
+68 | 0762 68 memclr 16 8                   | clear WClocks gates from 2 to 3
+10 | 0763 10 
+08 | 0764 08 
+68 | 0765 68 memclr 38 2                   | clear EXT gates for RECEIVE
+26 | 0766 26 
+02 | 0767 02 
+a0 | 0768 a0 set_c u8 181 1                | open gate 2
+b5 | 0769 b5 
+01 | 0770 01 
+7c | 0771 7c exec 175                      | goto u8 175
+af | 0772 af 
+78 | 0773 78 chkret 180                    | if (gate 0 == 0) PC=PC+1
+b4 | 0774 b4 
+01 | 0775 01 end                           | end
+78 | 0776 78 chkret 181                    | if (gate 1 == 0) PC=PC+1
+b5 | 0777 b5 
+01 | 0778 01 end                           | end
+a0 | 0779 a0 set_c u8 155 1                | msgRadio4_d8_1 = 1
+9b | 0780 9b 
+01 | 0781 01 
+b0 | 0782 b0 set_v u8 150 56               | msgRadio4_id=lastReq
+96 | 0783 96 
+38 | 0784 38 
+b4 | 0785 b4 set_v u16 151 54              | msgRadio4_source=nodeId
+97 | 0786 97 
+36 | 0787 36 
+2c | 0788 2c pushx_vu u8 57                | push pai1:u8
+39 | 0789 39 
+55 | 0790 55 popx_u u16 153                | pop msgRadio4_target
+99 | 0791 99 
+a0 | 0792 a0 set_c u8 155 1                | msgRadio4_d8_1 = 1
+9b | 0793 9b 
+01 | 0794 01 
+2c | 0795 2c pushx_vu u8 149               | push lumus:u8
+95 | 0796 95 
+2d | 0797 2d pushx_vu u16 59               | push acumulador1:u16
+3b | 0798 3b 
 04 | 0799 04 add                           | add
-54 | 0800 54 popx_u u8 157                 | pop msgRadio4_d8_4
-9d | 0801 9d 
-90 | 0802 90 outevtx_v 19 25 _msgRadio4_t* 174  | emit Q_PUT len=25 var=msgRadio4
-13 | 0803 13 
-19 | 0804 19 
-ae | 0805 ae 
-8c | 0806 8c outevtx_c 4 1 3               | emit LED2 len=1 const=3
-04 | 0807 04 
-01 | 0808 01 
-03 | 0809 03 
-8c | 0810 8c outevtx_c 2 1 0               | emit LED0 len=1 const=0
-02 | 0811 02 
-01 | 0812 01 
-00 | 0813 00 
-7c | 0814 7c exec 167                      | goto u8 167
-a7 | 0815 a7 
-68 | 0816 68 memclr 16 8                   | clear WClocks gates from 2 to 3
-10 | 0817 10 
-08 | 0818 08 
-68 | 0819 68 memclr 26 2                   | clear EXT gates for PHOTO
-1a | 0820 1a 
-02 | 0821 02 
-68 | 0822 68 memclr 38 2                   | clear EXT gates for RECEIVE
-26 | 0823 26 
-02 | 0824 02 
-68 | 0825 68 memclr 50 2                   | clear EXT gates for CUSTOM_A
-32 | 0826 32 
-02 | 0827 02 
-01 | 0828 01 end                           | end
-01 | 0829 01 end                           | end
-68 | 0830 68 memclr 0 24                   | clear WClocks gates from 0 to 3
-00 | 0831 00 
-18 | 0832 18 
-02 | 0833 02 return                        | return
-01 | 0834 01 end                           | end
-01 | 0835 01 L1(0x01) => 205 (0xcd)
-cd | 0836 cd 
-0e | 0837 0e L14(0x0e) => 255 (0xff)
-ff | 0838 ff 
-93 | 0839 93 L147(0x93) => 560 (0x0230)
-02 | 0840 02 
-30 | 0841 30 
-7a | 0842 7a L122(0x7a) => 498 (0x01f2)
-01 | 0843 01 
-f2 | 0844 f2 
-03 | 0845 03 L3(0x03) => 830 (0x033e)
-03 | 0846 03 
-3e | 0847 3e 
-5b | 0848 5b L91(0x5b) => 431 (0x01af)
-01 | 0849 01 
-af | 0850 af 
-36 | 0851 36 L54(0x36) => 433 (0x01b1)
-01 | 0852 01 
-b1 | 0853 b1 
-a9 | 0854 a9 L169(0xa9) => 816 (0x0330)
-03 | 0855 03 
-30 | 0856 30 
-af | 0857 af L175(0xaf) => 766 (0x02fe)
-02 | 0858 02 
-fe | 0859 fe 
-5c | 0860 5c L92(0x5c) => 263 (0x0107)
-01 | 0861 01 
-07 | 0862 07 
-b9 | 0863 b9 L185(0xb9) => 755 (0x02f3)
-02 | 0864 02 
-f3 | 0865 f3 
-7c | 0866 7c L124(0x7c) => 537 (0x0219)
-02 | 0867 02 
-19 | 0868 19 
-98 | 0869 98 L152(0x98) => 574 (0x023e)
-02 | 0870 02 
-3e | 0871 3e 
-5d | 0872 5d L93(0x5d) => 331 (0x014b)
-01 | 0873 01 
-4b | 0874 4b 
-10 | 0875 10 L16(0x10) => 629 (0x0275)
-02 | 0876 02 
-75 | 0877 75 
-9a | 0878 9a L154(0x9a) => 589 (0x024d)
-02 | 0879 02 
-4d | 0880 4d 
-5e | 0881 5e L94(0x5e) => 438 (0x01b6)
-01 | 0882 01 
-b6 | 0883 b6 
-9b | 0884 9b L155(0x9b) => 548 (0x0224)
-02 | 0885 02 
-24 | 0886 24 
-cd | 0887 cd L205(0xcd) => 752 (0x02f0)
-02 | 0888 02 
-f0 | 0889 f0 
-9c | 0890 9c L156(0x9c) => 596 (0x0254)
-02 | 0891 02 
-54 | 0892 54 
-30 | 0893 30 L48(0x30) => 324 (0x0144)
-01 | 0894 01 
-44 | 0895 44 
-38 | 0896 38 L56(0x38) => 342 (0x0156)
-01 | 0897 01 
-56 | 0898 56 
-b8 | 0899 b8 L184(0xb8) => 745 (0x02e9)
-02 | 0900 02 
-e9 | 0901 e9 
-9e | 0902 9e L158(0x9e) => 495 (0x01ef)
-01 | 0903 01 
-ef | 0904 ef 
-be | 0905 be L190(0xbe) => 700 (0x02bc)
-02 | 0906 02 
-bc | 0907 bc 
-70 | 0908 70 L112(0x70) => 472 (0x01d8)
-01 | 0909 01 
-d8 | 0910 d8 
-bc | 0911 bc L188(0xbc) => 739 (0x02e3)
-02 | 0912 02 
-e3 | 0913 e3 
-a0 | 0914 a0 L160(0xa0) => 603 (0x025b)
-02 | 0915 02 
-5b | 0916 5b 
-81 | 0917 81 L129(0x81) => 506 (0x01fa)
-01 | 0918 01 
-fa | 0919 fa 
-cb | 0920 cb L203(0xcb) => 737 (0x02e1)
-02 | 0921 02 
-e1 | 0922 e1 
-42 | 0923 42 L66(0x42) => 382 (0x017e)
-01 | 0924 01 
-7e | 0925 7e 
-ca | 0926 ca L202(0xca) => 717 (0x02cd)
-02 | 0927 02 
-cd | 0928 cd 
-ba | 0929 ba L186(0xba) => 696 (0x02b8)
-02 | 0930 02 
-b8 | 0931 b8 
-1d | 0932 1d L29(0x1d) => 283 (0x011b)
-01 | 0933 01 
-1b | 0934 1b 
-43 | 0935 43 L67(0x43) => 388 (0x0184)
-01 | 0936 01 
-84 | 0937 84 
-b7 | 0938 b7 L183(0xb7) => 696 (0x02b8)
-02 | 0939 02 
-b8 | 0940 b8 
-ae | 0941 ae L174(0xae) => 687 (0x02af)
-02 | 0942 02 
-af | 0943 af 
-b4 | 0944 b4 L180(0xb4) => 679 (0x02a7)
-02 | 0945 02 
-a7 | 0946 a7 
-44 | 0947 44 L68(0x44) => 361 (0x0169)
-01 | 0948 01 
-69 | 0949 69 
-88 | 0950 88 L136(0x88) => 535 (0x0217)
-02 | 0951 02 
-17 | 0952 17 
-64 | 0953 64 L100(0x64) => 450 (0x01c2)
-01 | 0954 01 
-c2 | 0955 c2 
-a7 | 0956 a7 L167(0xa7) => 657 (0x0291)
-02 | 0957 02 
-91 | 0958 91 
-45 | 0959 45 L69(0x45) => 374 (0x0176)
-01 | 0960 01 
-76 | 0961 76 
-6a | 0962 6a L106(0x6a) => 605 (0x025d)
-02 | 0963 02 
-5d | 0964 5d 
-9f | 0965 9f L159(0x9f) => 598 (0x0256)
-02 | 0966 02 
-56 | 0967 56 
-0f | 0968 0f L15(0x0f) => 439 (0x01b7)
-01 | 0969 01 
-b7 | 0970 b7 
-46 | 0971 46 L70(0x46) => 390 (0x0186)
-01 | 0972 01 
-86 | 0973 86 
-aa | 0974 aa L170(0xaa) => 661 (0x0295)
-02 | 0975 02 
-95 | 0976 95 
-66 | 0977 66 L102(0x66) => 616 (0x0268)
-02 | 0978 02 
-68 | 0979 68 
-87 | 0980 87 L135(0x87) => 526 (0x020e)
-02 | 0981 02 
-0e | 0982 0e 
-8c | 0983 8c L140(0x8c) => 552 (0x0228)
-02 | 0984 02 
-28 | 0985 28 
-99 | 0986 99 L153(0x99) => 580 (0x0244)
-02 | 0987 02 
-44 | 0988 44 
-34 | 0989 34 L52(0x34) => 338 (0x0152)
-01 | 0990 01 
-52 | 0991 52 
-ad | 0992 ad L173(0xad) => 673 (0x02a1)
-02 | 0993 02 
-a1 | 0994 a1 
-8e | 0995 8e L142(0x8e) => 591 (0x024f)
-02 | 0996 02 
-4f | 0997 4f 
-58 | 0998 58 L88(0x58) => 410 (0x019a)
-01 | 0999 01 
-9a | 1000 9a 
-68 | 1001 68 L104(0x68) => 454 (0x01c6)
-01 | 1002 01 
-c6 | 1003 c6 
-78 | 1004 78 L120(0x78) => 493 (0x01ed)
-01 | 1005 01 
-ed | 1006 ed 
-86 | 1007 86 L134(0x86) => 520 (0x0208)
-02 | 1008 02 
-08 | 1009 08 
-59 | 1010 59 L89(0x59) => 429 (0x01ad)
-01 | 1011 01 
-ad | 1012 ad 
-1f | 1013 1f L31(0x1f) => 326 (0x0146)
-01 | 1014 01 
-46 | 1015 46 
-67 | 1016 67 L103(0x67) => 454 (0x01c6)
-01 | 1017 01 
-c6 | 1018 c6 
-6f | 1019 6f L111(0x6f) => 466 (0x01d2)
-01 | 1020 01 
-d2 | 1021 d2 
-5a | 1022 5a L90(0x5a) => 353 (0x0161)
-01 | 1023 01 
-61 | 1024 61 
-9d | 1025 9d L157(0x9d) => 485 (0x01e5)
-01 | 1026 01 
-e5 | 1027 e5 
+55 | 0800 55 popx_u u16 159                | pop msgRadio4_d16_1
+9f | 0801 9f 
+1c | 0802 1c push_c 1                      | push 1
+01 | 0803 01 
+2c | 0804 2c pushx_vu u8 61                | push acumulador2:u8
+3d | 0805 3d 
+04 | 0806 04 add                           | add
+54 | 0807 54 popx_u u8 158                 | pop msgRadio4_d8_4
+9e | 0808 9e 
+90 | 0809 90 outevtx_v 19 25 _msgRadio4_t* 175  | emit Q_PUT len=25 var=msgRadio4
+13 | 0810 13 
+19 | 0811 19 
+af | 0812 af 
+8c | 0813 8c outevtx_c 4 1 3               | emit LED2 len=1 const=3
+04 | 0814 04 
+01 | 0815 01 
+03 | 0816 03 
+8c | 0817 8c outevtx_c 2 1 0               | emit LED0 len=1 const=0
+02 | 0818 02 
+01 | 0819 01 
+00 | 0820 00 
+7c | 0821 7c exec 167                      | goto u8 167
+a7 | 0822 a7 
+68 | 0823 68 memclr 16 8                   | clear WClocks gates from 2 to 3
+10 | 0824 10 
+08 | 0825 08 
+68 | 0826 68 memclr 26 2                   | clear EXT gates for PHOTO
+1a | 0827 1a 
+02 | 0828 02 
+68 | 0829 68 memclr 38 2                   | clear EXT gates for RECEIVE
+26 | 0830 26 
+02 | 0831 02 
+68 | 0832 68 memclr 50 2                   | clear EXT gates for CUSTOM_A
+32 | 0833 32 
+02 | 0834 02 
+01 | 0835 01 end                           | end
+01 | 0836 01 end                           | end
+68 | 0837 68 memclr 0 24                   | clear WClocks gates from 0 to 3
+00 | 0838 00 
+18 | 0839 18 
+02 | 0840 02 return                        | return
+01 | 0841 01 end                           | end
+01 | 0842 01 L1(0x01) => 206 (0xce)
+ce | 0843 ce 
+93 | 0844 93 L147(0x93) => 561 (0x0231)
+02 | 0845 02 
+31 | 0846 31 
+7a | 0847 7a L122(0x7a) => 499 (0x01f3)
+01 | 0848 01 
+f3 | 0849 f3 
+03 | 0850 03 L3(0x03) => 837 (0x0345)
+03 | 0851 03 
+45 | 0852 45 
+5b | 0853 5b L91(0x5b) => 432 (0x01b0)
+01 | 0854 01 
+b0 | 0855 b0 
+36 | 0856 36 L54(0x36) => 434 (0x01b2)
+01 | 0857 01 
+b2 | 0858 b2 
+a9 | 0859 a9 L169(0xa9) => 823 (0x0337)
+03 | 0860 03 
+37 | 0861 37 
+af | 0862 af L175(0xaf) => 773 (0x0305)
+03 | 0863 03 
+05 | 0864 05 
+5c | 0865 5c L92(0x5c) => 264 (0x0108)
+01 | 0866 01 
+08 | 0867 08 
+86 | 0868 86 L134(0x86) => 521 (0x0209)
+02 | 0869 02 
+09 | 0870 09 
+7c | 0871 7c L124(0x7c) => 538 (0x021a)
+02 | 0872 02 
+1a | 0873 1a 
+98 | 0874 98 L152(0x98) => 575 (0x023f)
+02 | 0875 02 
+3f | 0876 3f 
+5d | 0877 5d L93(0x5d) => 332 (0x014c)
+01 | 0878 01 
+4c | 0879 4c 
+0e | 0880 0e L14(0x0e) => 256 (0x0100)
+01 | 0881 01 
+00 | 0882 00 
+10 | 0883 10 L16(0x10) => 630 (0x0276)
+02 | 0884 02 
+76 | 0885 76 
+9a | 0886 9a L154(0x9a) => 590 (0x024e)
+02 | 0887 02 
+4e | 0888 4e 
+5e | 0889 5e L94(0x5e) => 439 (0x01b7)
+01 | 0890 01 
+b7 | 0891 b7 
+9b | 0892 9b L155(0x9b) => 549 (0x0225)
+02 | 0893 02 
+25 | 0894 25 
+bb | 0895 bb L187(0xbb) => 762 (0x02fa)
+02 | 0896 02 
+fa | 0897 fa 
+9c | 0898 9c L156(0x9c) => 597 (0x0255)
+02 | 0899 02 
+55 | 0900 55 
+30 | 0901 30 L48(0x30) => 325 (0x0145)
+01 | 0902 01 
+45 | 0903 45 
+38 | 0904 38 L56(0x38) => 343 (0x0157)
+01 | 0905 01 
+57 | 0906 57 
+ba | 0907 ba L186(0xba) => 752 (0x02f0)
+02 | 0908 02 
+f0 | 0909 f0 
+9e | 0910 9e L158(0x9e) => 496 (0x01f0)
+01 | 0911 01 
+f0 | 0912 f0 
+be | 0913 be L190(0xbe) => 746 (0x02ea)
+02 | 0914 02 
+ea | 0915 ea 
+70 | 0916 70 L112(0x70) => 473 (0x01d9)
+01 | 0917 01 
+d9 | 0918 d9 
+cd | 0919 cd L205(0xcd) => 744 (0x02e8)
+02 | 0920 02 
+e8 | 0921 e8 
+a0 | 0922 a0 L160(0xa0) => 604 (0x025c)
+02 | 0923 02 
+5c | 0924 5c 
+81 | 0925 81 L129(0x81) => 507 (0x01fb)
+01 | 0926 01 
+fb | 0927 fb 
+cc | 0928 cc L204(0xcc) => 724 (0x02d4)
+02 | 0929 02 
+d4 | 0930 d4 
+42 | 0931 42 L66(0x42) => 383 (0x017f)
+01 | 0932 01 
+7f | 0933 7f 
+c0 | 0934 c0 L192(0xc0) => 707 (0x02c3)
+02 | 0935 02 
+c3 | 0936 c3 
+bc | 0937 bc L188(0xbc) => 703 (0x02bf)
+02 | 0938 02 
+bf | 0939 bf 
+1d | 0940 1d L29(0x1d) => 284 (0x011c)
+01 | 0941 01 
+1c | 0942 1c 
+43 | 0943 43 L67(0x43) => 389 (0x0185)
+01 | 0944 01 
+85 | 0945 85 
+b9 | 0946 b9 L185(0xb9) => 703 (0x02bf)
+02 | 0947 02 
+bf | 0948 bf 
+ae | 0949 ae L174(0xae) => 688 (0x02b0)
+02 | 0950 02 
+b0 | 0951 b0 
+b4 | 0952 b4 L180(0xb4) => 680 (0x02a8)
+02 | 0953 02 
+a8 | 0954 a8 
+44 | 0955 44 L68(0x44) => 362 (0x016a)
+01 | 0956 01 
+6a | 0957 6a 
+88 | 0958 88 L136(0x88) => 536 (0x0218)
+02 | 0959 02 
+18 | 0960 18 
+64 | 0961 64 L100(0x64) => 451 (0x01c3)
+01 | 0962 01 
+c3 | 0963 c3 
+a7 | 0964 a7 L167(0xa7) => 658 (0x0292)
+02 | 0965 02 
+92 | 0966 92 
+45 | 0967 45 L69(0x45) => 375 (0x0177)
+01 | 0968 01 
+77 | 0969 77 
+6a | 0970 6a L106(0x6a) => 606 (0x025e)
+02 | 0971 02 
+5e | 0972 5e 
+9f | 0973 9f L159(0x9f) => 599 (0x0257)
+02 | 0974 02 
+57 | 0975 57 
+0f | 0976 0f L15(0x0f) => 440 (0x01b8)
+01 | 0977 01 
+b8 | 0978 b8 
+46 | 0979 46 L70(0x46) => 391 (0x0187)
+01 | 0980 01 
+87 | 0981 87 
+aa | 0982 aa L170(0xaa) => 662 (0x0296)
+02 | 0983 02 
+96 | 0984 96 
+66 | 0985 66 L102(0x66) => 617 (0x0269)
+02 | 0986 02 
+69 | 0987 69 
+87 | 0988 87 L135(0x87) => 527 (0x020f)
+02 | 0989 02 
+0f | 0990 0f 
+8c | 0991 8c L140(0x8c) => 553 (0x0229)
+02 | 0992 02 
+29 | 0993 29 
+99 | 0994 99 L153(0x99) => 581 (0x0245)
+02 | 0995 02 
+45 | 0996 45 
+34 | 0997 34 L52(0x34) => 339 (0x0153)
+01 | 0998 01 
+53 | 0999 53 
+ad | 1000 ad L173(0xad) => 674 (0x02a2)
+02 | 1001 02 
+a2 | 1002 a2 
+8e | 1003 8e L142(0x8e) => 592 (0x0250)
+02 | 1004 02 
+50 | 1005 50 
+58 | 1006 58 L88(0x58) => 411 (0x019b)
+01 | 1007 01 
+9b | 1008 9b 
+68 | 1009 68 L104(0x68) => 455 (0x01c7)
+01 | 1010 01 
+c7 | 1011 c7 
+78 | 1012 78 L120(0x78) => 494 (0x01ee)
+01 | 1013 01 
+ee | 1014 ee 
+cf | 1015 cf L207(0xcf) => 759 (0x02f7)
+02 | 1016 02 
+f7 | 1017 f7 
+59 | 1018 59 L89(0x59) => 430 (0x01ae)
+01 | 1019 01 
+ae | 1020 ae 
+1f | 1021 1f L31(0x1f) => 327 (0x0147)
+01 | 1022 01 
+47 | 1023 47 
+67 | 1024 67 L103(0x67) => 455 (0x01c7)
+01 | 1025 01 
+c7 | 1026 c7 
+6f | 1027 6f L111(0x6f) => 467 (0x01d3)
+01 | 1028 01 
+d3 | 1029 d3 
+5a | 1030 5a L90(0x5a) => 354 (0x0162)
+01 | 1031 01 
+62 | 1032 62 
+9d | 1033 9d L157(0x9d) => 486 (0x01e6)
+01 | 1034 01 
+e6 | 1035 e6 

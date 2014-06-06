@@ -2,7 +2,7 @@
 var u8 lastReq = 0;
 var u8 pai1 = 0;
 var u8 pai2 = 0;
-var u8 acumulador1 = 0;
+var u16 acumulador1 = 0;
 var u8 acumulador2 = 0;
 var u8 myHop = 0;
 par do
@@ -104,7 +104,7 @@ with
 with
 	var u8 lumus;
 	usrMsg_t(msgRadio4,1);
-	var u16 timeout =(60*1000*2^(-myHop+1));
+	var u16 timeout =(60*1000*(2^(-myHop+1)));
 	var u8 qtdnos = 0;
 	loop do
 		await CUSTOM_A ;
@@ -114,6 +114,8 @@ with
 			lumus = await PHOTO;
 		with
 			emit LED1(0);
+			acumulador1 = 0;
+			acumulador2 = 0;
 			par/or do
 				loop do
 					msgRadio4 = await RECEIVE;

@@ -22,7 +22,7 @@ par do
 			emit LED0(3);
 			acumulador1 = 0;
 			acumulador2 = 0;
-			await 10s;
+			await 30s;
 		end
 	else
 		usrMsg_t(msgRadio2,1);
@@ -38,22 +38,17 @@ par do
 					else/if pai2 == 0  then
 						pai2 = msgRadio2_source;
 					end
-
-					msgRadio2_source = nodeId;
-					emit Q_PUT (msgRadio2);
-					emit LED0(3);
+					if msgRadio2_source==pai1 or msgRadio2_source==pai2 and msgRadio2_id>lastReq  then
+						lastReq = msgRadio2_id;
+						msgRadio2_source = nodeId;
+						emit Q_PUT (msgRadio2);
+						emit LED0(3);
 					
-					emit REQ_CUSTOM_A(1);
+						emit REQ_CUSTOM_A(1);
+					end
 				else
 					msgRadio2_target = pai1;
-					par/or do
-						emit Q_PUT (msgRadio2);
-						
-					with
-						await 5s;
-						msgRadio2_target = pai2;
-						emit Q_PUT(msgRadio2);
-					end
+					emit Q_PUT (msgRadio2);
 				end
 			end
 		with
@@ -64,17 +59,15 @@ par do
 				if msgRadio2_source==pai1 or msgRadio2_source==pai2  then
 				
 					/* so atende novas requisicoes dos pais */
-					lastReq = msgRadio2_id;
 					emit REQ_PHOTO();
 					usrMsg_t(msgRadio4,1);
+					msgRadio4_id = lastReq;
 					msgRadio4_source = nodeId;
 					msgRadio4_target = pai1;
 					msgRadio4_d8_1 = 1; /* resposta */
 					msgRadio4_d8_3 = await PHOTO;
 				
-					emit Q_PUT (msgRadio4);				
-				//	msgRadio4_target = pai2;
-				//	emit Q_PUT (msgRadio4);					
+					emit Q_PUT (msgRadio4);								
 				end
 			end
 		end

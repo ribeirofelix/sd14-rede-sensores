@@ -17,6 +17,7 @@ par do
 				msgRadio1_source = nodeId;
 				msgRadio1_target = BROADCAST;
 				msgRadio1_d8_1 = 0; /* 0-> request ; 1 -> answer */
+				msgRadio1_d8_2 = 1; // Initial hop
 				lastReq = lastReq + 1;
 				msgRadio1_id = lastReq;
 				emit Q_PUT (msgRadio1);
@@ -46,12 +47,13 @@ par do
 					/* sendo a primeira requisicao, setamos os pais */
 					if pai1 == 0  then
 						pai1 = msgRadio2_source;
+						msgRadio2_d8_2 = msgRadio2_d8_2 + 1 ;
 					else/if pai2 == 0  then
 						pai2 = msgRadio2_source;
 					end
 					if msgRadio2_source==pai1 or msgRadio2_source==pai2 and msgRadio2_id>lastReq  then
 						lastReq = msgRadio2_id;
-						msgRadio2_source = nodeId;
+						msgRadio2_source = nodeId;						
 						emit Q_PUT (msgRadio2);
 						emit LED0(3);
 					
@@ -66,20 +68,17 @@ par do
 			loop do
 				await CUSTOM_A ;
 				await 10s;
-				/* envia resposta se nao for duplicada */
-				//if msgRadio2_source==pai1 or msgRadio2_source==pai2  then
-				
-					/* so atende novas requisicoes dos pais */
-					emit REQ_PHOTO();
-					usrMsg_t(msgRadio4,1);
-					msgRadio4_id = lastReq;
-					msgRadio4_source = nodeId;
-					msgRadio4_target = pai1;
-					msgRadio4_d8_1 = 1; /* resposta */
-					msgRadio4_d8_3 = await PHOTO;
-				
-					emit Q_PUT (msgRadio4);								
-				//end
+			
+				emit REQ_PHOTO();
+				usrMsg_t(msgRadio4,1);
+				msgRadio4_id = lastReq;
+				msgRadio4_source = nodeId;
+				msgRadio4_target = pai1;
+				msgRadio4_d8_1 = 1; /* resposta */
+				msgRadio4_d8_3 = await PHOTO;
+				var u8 timeout =(30*2^(-msgRadio4_d8_2+1));
+				await (timeout)s;
+				emit Q_PUT (msgRadio4);								
 			end
 		end
 	end

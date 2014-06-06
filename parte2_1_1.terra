@@ -19,11 +19,6 @@ par do
 			lastReq = lastReq + 1;
 			msgRadio1_id = lastReq;
 			emit Q_PUT (msgRadio1);
-			/* par/or do
-			await SEND_DONE;
-			with
-			await 5s;
-			end */ 
 			emit LED0(3);
 			acumulador1 = 0;
 			acumulador2 = 0;
@@ -33,7 +28,7 @@ par do
 		usrMsg_t(msgRadio2,1);
 		par do			
 			loop do
-				await RECEIVE;
+				msgRadio2 = await RECEIVE;
 				emit LED2(3);
 				/* requisicao */
 				if msgRadio2_d8_1==0 then
@@ -43,12 +38,22 @@ par do
 					else/if pai2 == 0  then
 						pai2 = msgRadio2_source;
 					end
+
+					msgRadio2_source = nodeId;
+					emit Q_PUT (msgRadio2);
+					emit LED0(3);
+					
 					emit REQ_CUSTOM_A(1);
 				else
 					msgRadio2_target = pai1;
-					emit Q_PUT (msgRadio2);
-					msgRadio2_target = pai2;
-					emit Q_PUT(msgRadio2);
+					par/or do
+						emit Q_PUT (msgRadio2);
+						
+					with
+						await 5s;
+						msgRadio2_target = pai2;
+						emit Q_PUT(msgRadio2);
+					end
 				end
 			end
 		with
@@ -57,26 +62,19 @@ par do
 				await 10s;
 				/* envia resposta se nao for duplicada */
 				if msgRadio2_source==pai1 or msgRadio2_source==pai2  then
-					par do
-						/* so atende novas requisicoes dos pais */
-						lastReq = msgRadio2_id;
-						emit REQ_PHOTO();
-						usrMsg_t(msgRadio4,1);
-						msgRadio4_source = nodeId;
-						msgRadio4_target = pai1;
-						msgRadio4_d8_1 = 1; /* resposta */
-						msgRadio4_d8_3 = await PHOTO;
-					
-						emit Q_PUT (msgRadio4);
-						msgRadio4_target = pai2;
-						emit Q_PUT (msgRadio4);
-						
-					with
-						msgRadio2_source = nodeId;
-						emit Q_PUT (msgRadio2);
-						emit LED0(3);
-						await 1ms;
-					end
+				
+					/* so atende novas requisicoes dos pais */
+					lastReq = msgRadio2_id;
+					emit REQ_PHOTO();
+					usrMsg_t(msgRadio4,1);
+					msgRadio4_source = nodeId;
+					msgRadio4_target = pai1;
+					msgRadio4_d8_1 = 1; /* resposta */
+					msgRadio4_d8_3 = await PHOTO;
+				
+					emit Q_PUT (msgRadio4);				
+				//	msgRadio4_target = pai2;
+				//	emit Q_PUT (msgRadio4);					
 				end
 			end
 		end
@@ -84,11 +82,17 @@ par do
 with
 	var u8 x ;
 	usrMsg_t(msgRadio4, 1);
-
+	var u8 size ;
+	var u8* size_t = &size;
 	loop do
 		await Q_READY ;
 
 		loop do
+
+			emit Q_SIZE(size_t);
+			if (size == 0) then
+				break;
+			end
 			
 			emit Q_GET(msgRadio4);
 			if msgRadio4_target == BROADCAST then
@@ -99,7 +103,7 @@ with
 				loop do
 					emit SEND_ACK(msgRadio4);
 					x = await SEND_DONE_ACK ;
-					if x or try == 3 then
+					if x then
 						break;
 					else
 						try = try + 1 ;

@@ -37,13 +37,13 @@ par do
 				if pai1 == 0  then
 					pai1 = msgRadio2_source;
 					myHop = msgRadio2_d8_2 + 1;
-					msgRadio2_d8_2 = myHop ;
 				else/if pai2 == 0  then
 					pai2 = msgRadio2_source;
 				end
 				if msgRadio2_source==pai1 or msgRadio2_source==pai2 and msgRadio2_id>lastReq  then
 					lastReq = msgRadio2_id;
-					msgRadio2_source = nodeId;						
+					msgRadio2_source = nodeId;
+					msgRadio2_d8_2 = myHop ;						
 					emit Q_PUT (msgRadio2);
 					//emit LED0(3);
 					emit REQ_CUSTOM_A(1);
@@ -104,7 +104,7 @@ with
 with
 	var u8 lumus;
 	usrMsg_t(msgRadio4,1);
-	var u8 timeout =(60*1000*3^(-myHop+1));
+	var u16 timeout =(60*1000*2^(-myHop+1));
 	var u8 qtdnos = 0;
 	loop do
 		await CUSTOM_A ;
@@ -127,17 +127,17 @@ with
 				end
 			with
 				await (timeout)ms;
-				msgRadio4_d8_1 = 1;
-				msgRadio4_id = lastReq;
-				msgRadio4_source = nodeId;
-				msgRadio4_target = pai1;
-				msgRadio4_d8_1 = 1; /* resposta */
-				msgRadio4_d16_1 = acumulador1 + lumus;
-				msgRadio4_d8_4 = acumulador2 + 1;
-				emit Q_PUT (msgRadio4);
-				emit LED2(3);
-				emit LED0(0);
 			end
 		end
+		msgRadio4_d8_1 = 1;
+		msgRadio4_id = lastReq;
+		msgRadio4_source = nodeId;
+		msgRadio4_target = pai1;
+		msgRadio4_d8_1 = 1; /* resposta */
+		msgRadio4_d16_1 = acumulador1 + lumus;
+		msgRadio4_d8_4 = acumulador2 + 1;
+		emit Q_PUT (msgRadio4);
+		emit LED2(3);
+		emit LED0(0);
 	end								
 end

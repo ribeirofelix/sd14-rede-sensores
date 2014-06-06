@@ -7,22 +7,33 @@ var u8 acumulador2 = 0;
 par do
 	/* no raiz */
 	if nodeId == 11 then
-
+		pai1 = 1; /* no auxiliar para debug */
+		pai2 = 1; 
 		usrMsg_t(msgRadio1,1);
 		usrMsg_t(msgRadio2,1);
-
-		/* envio de requisicoes */
-		loop do
-			msgRadio1_source = nodeId;
-			msgRadio1_target = BROADCAST;
-			msgRadio1_d8_1 = 0; /* 0-> request ; 1 -> answer */
-			lastReq = lastReq + 1;
-			msgRadio1_id = lastReq;
-			emit Q_PUT (msgRadio1);
-			emit LED0(3);
-			acumulador1 = 0;
-			acumulador2 = 0;
-			await 30s;
+		par do
+			/* envio de requisicoes */
+			loop do
+				msgRadio1_source = nodeId;
+				msgRadio1_target = BROADCAST;
+				msgRadio1_d8_1 = 0; /* 0-> request ; 1 -> answer */
+				lastReq = lastReq + 1;
+				msgRadio1_id = lastReq;
+				emit Q_PUT (msgRadio1);
+				emit LED0(3);
+				acumulador1 = 0;
+				acumulador2 = 0;
+				await 30s;
+			end
+		with
+			loop do
+				msgRadio2 = await RECEIVE;
+				if msgRadio2_d8_1 == 1 then
+					msgRadio2_target = pai1;
+					emit Q_PUT (msgRadio2);
+					emit LED2(3);
+				end
+			end
 		end
 	else
 		usrMsg_t(msgRadio2,1);
@@ -56,7 +67,7 @@ par do
 				await CUSTOM_A ;
 				await 10s;
 				/* envia resposta se nao for duplicada */
-				if msgRadio2_source==pai1 or msgRadio2_source==pai2  then
+				//if msgRadio2_source==pai1 or msgRadio2_source==pai2  then
 				
 					/* so atende novas requisicoes dos pais */
 					emit REQ_PHOTO();
@@ -68,7 +79,7 @@ par do
 					msgRadio4_d8_3 = await PHOTO;
 				
 					emit Q_PUT (msgRadio4);								
-				end
+				//end
 			end
 		end
 	end
@@ -96,10 +107,23 @@ with
 				loop do
 					emit SEND_ACK(msgRadio4);
 					x = await SEND_DONE_ACK ;
-					if x then
+					if x or try==3 then
 						break;
 					else
 						try = try + 1 ;
+					end
+				end
+
+				if try == 3 then
+					msgRadio4_target = pai2;
+					loop do
+						emit SEND_ACK(msgRadio4);
+						x = await SEND_DONE_ACK ;
+						if x or try==6 then
+							break;
+						else
+							try = try + 1 ;
+						end
 					end
 				end
 			end

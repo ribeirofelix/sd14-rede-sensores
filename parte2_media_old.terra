@@ -2,16 +2,17 @@
 var u8 lastReq = 0;
 var u8 pai1 = 0;
 var u8 pai2 = 0;
-var u16 acumulador1 = 0;
+var u32 acumulador1 = 0;
 var u8 acumulador2 = 0;
 var u8 myHop = 0;
+event u8 resposta;
+usrMsg_t(msgRadio2,1);
 par do
 	/* no raiz */
 	if nodeId == 11 then
 		pai1 = 1; /* no auxiliar para debug */
 		pai2 = 1; 
 		usrMsg_t(msgRadio1,1);
-		usrMsg_t(msgRadio2,1);
 		/* envio de requisicoes */
 		loop do
 			msgRadio1_source = nodeId;
@@ -25,34 +26,6 @@ par do
 			//emit LED0(3);
 			emit REQ_CUSTOM_A(1);
 			await 70s;
-		end
-	else
-		usrMsg_t(msgRadio2,1);			
-		loop do
-			emit LED1(1);
-			await 20ms;
-			msgRadio2 = await RECEIVE;
-			emit LED1(0);
-			/* requisicao */
-			if msgRadio2_d8_1==0 then
-				/* sendo a primeira requisicao, setamos os pais */
-				if pai1 == 0  then
-					pai1 = msgRadio2_source;
-					myHop = msgRadio2_d8_2 + 1;
-				else/if pai2 == 0  then
-					pai2 = msgRadio2_source;
-				end
-				if msgRadio2_source==pai1 or msgRadio2_source==pai2 and msgRadio2_id>lastReq  then
-					lastReq = msgRadio2_id;
-					msgRadio2_source = nodeId;
-					msgRadio2_d8_2 = myHop ;
-					emit LED2(1);
-					await 20ms;						
-					emit Q_PUT (msgRadio2);
-					emit LED2(0);
-					emit REQ_CUSTOM_A(1);
-				end
-			end
 		end
 	end
 with
@@ -106,12 +79,12 @@ with
 
 	end
 with
-	var u8 lumus;
+	var u16 lumus;
 	usrMsg_t(msgRadio4,1);
-	var u16 timeout =(60*1000*(2^(-myHop+1)));
 	var u8 qtdnos = 0;
 	loop do
 		await CUSTOM_A ;
+		var u16 timeout =60000/myHop;
 		emit LED0(1);
 		par/and do
 			emit REQ_PHOTO();
@@ -122,14 +95,12 @@ with
 			acumulador2 = 0;
 			par/or do
 				loop do
-					msgRadio4 = await RECEIVE;
-					if msgRadio4_d8_1 == 1 and msgRadio4_id == lastReq then
-						//emit LED1(1);
-						/* somatorio de luminosidade */
-						acumulador1 = acumulador1 + msgRadio4_d16_1;
-						/* quantidade de nos */
-						acumulador2 = acumulador2 + msgRadio4_d8_4;	
-					end
+					await resposta;
+					//emit LED1(1);
+					/* somatorio de luminosidade */
+					acumulador1 = acumulador1 + msgRadio2_d32_1;
+					/* quantidade de nos */
+					acumulador2 = acumulador2 + msgRadio2_d8_4;	
 				end
 			with
 				await (timeout)ms;
@@ -140,10 +111,40 @@ with
 		msgRadio4_source = nodeId;
 		msgRadio4_target = pai1;
 		msgRadio4_d8_1 = 1; /* resposta */
-		msgRadio4_d16_1 = acumulador1 + lumus;
+		msgRadio4_d32_1 = acumulador1 + lumus;
 		msgRadio4_d8_4 = acumulador2 + 1;
 		emit Q_PUT (msgRadio4);
 		//emit LED2(3);
 		emit LED0(0);
-	end								
+	end		
+with			
+	loop do
+		emit LED1(1);
+		await 20ms;
+		msgRadio2 = await RECEIVE;
+		emit LED1(0);
+		/* requisicao */
+		if msgRadio2_d8_1==0 and nodeId!=11 then
+			/* sendo a primeira requisicao, setamos os pais */
+			if pai1 == 0  then
+				pai1 = msgRadio2_source;
+				myHop = msgRadio2_d8_2 + 1;
+			else/if pai2 == 0  then
+				pai2 = msgRadio2_source;
+			end
+			if msgRadio2_source==pai1 or msgRadio2_source==pai2 and msgRadio2_id>lastReq  then
+				lastReq = msgRadio2_id;
+				msgRadio2_source = nodeId;
+				msgRadio2_d8_2 = myHop ;
+				emit LED2(1);
+				await 20ms;						
+				emit Q_PUT (msgRadio2);
+				emit LED2(0);
+				emit REQ_CUSTOM_A(1);
+			end
+		/* resposta de filhos */
+		else/if msgRadio2_d8_1 == 1 and msgRadio2_id == lastReq then
+			emit resposta; 
+		end
+	end						
 end

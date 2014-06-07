@@ -26,7 +26,6 @@ par do
 			emit REQ_CUSTOM_A(1);
 			await 70s;
 		end
-<<<<<<< HEAD
 	else
 		usrMsg_t(msgRadio2,1);			
 		loop do
@@ -55,8 +54,6 @@ par do
 				end
 			end
 		end
-=======
->>>>>>> 8ff77fd05bbf13f7ddf6f777ff3005afe9a7786a
 	end
 with
 	var u8 x ;
@@ -122,14 +119,10 @@ with
 			emit REQ_PHOTO();
 			lumus = await PHOTO;
 		with
-<<<<<<< HEAD
 			//emit LED1(0);
 			acumulador1 = 0;
 			acumulador2 = 0;
-=======
-			emit LED1(0);
-			
->>>>>>> 8ff77fd05bbf13f7ddf6f777ff3005afe9a7786a
+
 			par/or do
 				loop do
 					msgRadio4 = await RECEIVE;

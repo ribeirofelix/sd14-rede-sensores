@@ -1,0 +1,149 @@
+Creating servant 1
+Creating servant 2
+Creating servant 3
+Obj1 ip: 0.0.0.0 port: 49726
+Obj2 ip: 0.0.0.0 port: 49727
+Obj3 ip: 0.0.0.0 port: 49728
+interface1.lua
+interface2.lua
+Result
+interface1.lua
+0.0.0.0 49726
+interface2.lua
+
+closed
+interface1.lua
+0.0.0.0 49726
+interface2.lua
+Result
+interface1.lua
+0.0.0.0 49727
+0.0.0.0 49726
+interface2.lua
+
+closed
+interface1.lua
+0.0.0.0 49727
+0.0.0.0 49726
+interface2.lua
+Result
+interface1.lua
+0.0.0.0 49727
+0.0.0.0 49726
+interface2.lua
+0.0.0.0 49728
+
+closed
+Heard from 0.0.0.0:49727
+Activating connection 
+0 Connected clients
+Cliente conectado 0.0.0.0:49727
+Method foo declared
+Arguments 3 5
+Mensagem de Retorno 
+-2
+"tchau"
+Fim mensagem de retorno
+--------
+Heard from 127.0.0.1:49727
+Activating connection 
+1 Connected clients
+Cliente ainda conectado 127.0.0.1:49727
+Method foo declared
+Arguments 3 nil
+Mensagem de Retorno 
+___ERRORPC: server.lua:47: attempt to perform arithmetic on local 'b' (a nil value)
+Fim mensagem de retorno
+--------
+Heard from 127.0.0.1:49727
+Activating connection 
+1 Connected clients
+Cliente ainda conectado 127.0.0.1:49727
+Method foo declared
+Arguments nil nil
+Mensagem de Retorno 
+___ERRORPC: server.lua:47: attempt to perform arithmetic on local 'a' (a nil value)
+Fim mensagem de retorno
+--------
+Heard from 127.0.0.1:49727
+Activating connection 
+1 Connected clients
+Cliente ainda conectado 127.0.0.1:49727
+Method foo declared
+Arguments 1 2
+Mensagem de Retorno 
+-1
+"tchau"
+Fim mensagem de retorno
+--------
+Heard from 0.0.0.0:49726
+Activating connection 
+1 Connected clients
+Cliente conectado 0.0.0.0:49726
+Method foo declared
+Arguments 3 5
+Mensagem de Retorno 
+8
+"alo alo"
+Fim mensagem de retorno
+--------
+Heard from 0.0.0.0:49728
+Activating connection 
+2 Connected clients
+Cliente desconectado 127.0.0.1:49727
+Cliente conectado 0.0.0.0:49728
+Method foo declared
+Arguments 1 2 3
+Mensagem de Retorno 
+3
+-1
+Fim mensagem de retorno
+--------
+Heard from 127.0.0.1:49728
+Activating connection 
+2 Connected clients
+Cliente ainda conectado 127.0.0.1:49728
+Method bar declared
+Arguments 
+Hello World!
+Mensagem de Retorno 
+nil
+Fim mensagem de retorno
+--------
+Heard from 127.0.0.1:49728
+Activating connection 
+2 Connected clients
+Cliente ainda conectado 127.0.0.1:49728
+Method boo declared
+Arguments "testing \\ rpc!"
+Mensagem de Retorno 
+___ERRORPC: Method "boo" returned invalid values.
+Fim mensagem de retorno
+--------
+Heard from 0.0.0.0:49727
+Activating connection 
+2 Connected clients
+Cliente desconectado 127.0.0.1:49726
+Cliente conectado 0.0.0.0:49727
+Mensagem de Retorno 
+___ERRORPC: Method "bar" not declared in servant.
+Fim mensagem de retorno
+--------
+Heard from 127.0.0.1:49727
+Activating connection 
+2 Connected clients
+Cliente ainda conectado 127.0.0.1:49727
+Mensagem de Retorno 
+___ERRORPC: Method "bar" not declared in servant.
+Fim mensagem de retorno
+--------
+Heard from 127.0.0.1:49728
+Activating connection 
+2 Connected clients
+Cliente ainda conectado 127.0.0.1:49728
+Couldn't handle request
+Heard from 127.0.0.1:49727
+Activating connection 
+1 Connected clients
+Cliente ainda conectado 127.0.0.1:49727
+Couldn't handle request

@@ -1,4 +1,38 @@
 local tossam = require("tossam") 
+local rpc = require "luarpc2" 
+
+serverObj = {} 
+
+
+function publishContact( serv , interface)
+      local text = io.open("deploy", "r" ):read("*a")
+      local result = "" 
+      local firstOfInterface = true
+      
+      --print(text)
+      if text ~= "" then
+
+        for line in string.gmatch(text,'[^\r\n]+') do
+          print(line)
+          if(line == interface) then -- there's ip/port deployed to this interface
+            firstOfInterface = false
+            result = result  .. interface .. "\n" ..  serv.ip .. " " .. serv.port .. "\n"
+          else
+            result = result  .. line .. "\n"
+          end
+        end
+        if firstOfInterface then
+          result = result  .. interface .. "\n" ..  serv.ip .. " " .. serv.port .. "\n"
+        end
+      else 
+        result =   interface .. "\n" .. serv.ip .. " " .. serv.port .. "\n"
+      end
+
+      file = io.open("deploy","w")
+
+      file:write(result)
+      file:close()
+end
 
 function serialize( o )
 	local srl 
@@ -42,6 +76,7 @@ function printMessage (msg)
 	print("d8:",unpack(msg.d8))
 	print("d16:",unpack(msg.d16))
 	print("d32:",unpack(msg.d32))
+	return serialize(msg)
 end
 
 function createNewRequestMessage ()
@@ -57,7 +92,7 @@ function createNewRequestMessage ()
 	return msg
 end
 
-function getTemperature(nodeId, timeout )
+function serverObj.getTemperature(nodeId, timeout )
 	exit = false
 
 	timeout = ( type(timeout) == "number" and timeout ) or 15
@@ -85,7 +120,7 @@ function getTemperature(nodeId, timeout )
 			if stat then
 				if msg then
 					if ( ( ( nodeId and msg.source == nodeId) or ( not nodeId and msg.source ~= 0 ) ) and msg.d8[1] == 1) then
-						printMessage(msg)
+						return printMessage(msg)
 					else
 						--print "False"
 					end
@@ -112,6 +147,6 @@ function getTemperature(nodeId, timeout )
 end
 
 
-getTemperature(21)
-print "todos agora"
-getTemperature()
+serv = rpc.createServant(serverObj , "interface.lua" )
+publishContact(serv,"interface.lua" )
+rpc.waitIncoming()

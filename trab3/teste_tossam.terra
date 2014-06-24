@@ -1,0 +1,50 @@
+@include(/home/terra/TerraNet_v0.1/terra/Terra.m4)
+
+par do
+	usrMsg_t(msgRadio1,1);
+	msgRadio1 = await RECEIVE;
+	if msgRadio1_d8_1 == 1 then
+		msgRadio1_d8_2 = nodeId;
+		msgRadio1_source = nodeId;	
+		msgRadio1_target = 1;
+	end
+	emit Q_PUT (msgRadio1);
+with
+	var u8 x ;
+	usrMsg_t(msgRadio4, 1);
+	var u8 size ;
+	var u8* size_t = &size;
+	loop do
+		await Q_READY ;
+
+		loop do
+
+			emit Q_SIZE(size_t);
+			if (size == 0) then
+				break;
+			end
+			
+			emit Q_GET(msgRadio4);
+			if msgRadio4_target == BROADCAST then
+				emit SEND(msgRadio4);
+				await SEND_DONE;
+			else
+				var u8 try = 0 ;
+				loop do
+					emit SEND_ACK(msgRadio4);
+					x = await SEND_DONE_ACK ;
+					if x or try==3 then
+						break;
+					else
+						try = try + 1 ;
+					end
+				end
+
+			end
+
+			await 50ms ;
+
+		end
+
+	end
+end

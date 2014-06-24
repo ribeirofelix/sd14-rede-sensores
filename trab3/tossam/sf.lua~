@@ -1,0 +1,142 @@
+local socket = require("socket")
+local string = require("string")
+local table  = require("table")
+
+local type   = type
+local next   = next
+local pairs  = pairs
+local ipairs = ipairs
+local unpack = unpack
+local print  = print
+
+local setmetatable = setmetatable
+
+local band   = bit.band
+local bor    = bit.bor
+local bxor   = bit.bxor
+local rshift = bit.rshift
+local lshift = bit.lshift
+
+module("tossam.sf")
+
+-- HDLC flags
+local HDLC_SYNC   = 0x7E
+local HDLC_ESCAPE = 0x7D
+local HDLC_MAGIC  = 0x20
+
+-- Framer-level message type
+local SERIAL_PROTO_ACK            = 67
+local SERIAL_PROTO_PACKET_ACK     = 68
+local SERIAL_PROTO_PACKET_NOACK   = 69
+local SERIAL_PROTO_PACKET_UNKNOWN = 255
+
+local seqno   = 42
+local timeout = 100
+local MTU     = 255
+
+local function recv(sf)
+  local len, msg = sf.conn:receive(1)
+  if msg then
+    return nil, msg
+  end
+  len = string.byte(len)
+  if len == 0 then
+    return nil, "invalid packet length"
+  end
+  local pkt, msg = sf.conn:receive(len)
+  if msg then
+    return nil, msg
+  end
+  return pkt
+end
+
+local function checksum(buffer)
+  local crc = 0
+  for k, v in ipairs(buffer) do
+    crc = band(bxor(crc, lshift(v, 8)), 0xFFFF)
+    for i = 1, 8 do
+      if band(crc, 0x8000) == 0 then
+        crc = band(lshift(crc, 1), 0xFFFF)
+      else
+        crc = band(bxor(lshift(crc, 1), 0x1021), 0xFFFF)
+      end
+    end
+  end
+  return crc
+end
+
+
+local function lowsend(sf, str)
+  local buffer = { string.byte(str, 1, #str) }
+
+  table.insert(buffer, 1, SERIAL_PROTO_PACKET_ACK)
+  table.insert(buffer, 2, seqno)
+  seqno = ((seqno + 1) % 255)
+
+  local crc = checksum(buffer) 
+  buffer[#buffer+1] = band(crc, 0xFF)
+  buffer[#buffer+1] = band(rshift(crc, 8))
+
+  local pack = {HDLC_SYNC}
+  for k, v in ipairs(buffer) do
+    if v == HDLC_SYNC or v == HDLC_ESCAPE then
+      pack[#pack+1] = HDLC_ESCAPE
+      pack[#pack+1] = band(bxor(v, HDLC_MAGIC), 0xFF)
+    else
+      pack[#pack+1] = v
+    end
+  end
+  pack[#pack+1] = HDLC_SYNC
+
+  str = string.char(unpack(pack))
+  
+  return sf.conn:send(str)
+end
+
+local function send(sf, data)
+  local len = #data
+  len = string.char(len)
+  local succ, msg = sf.conn:send(len)
+  if msg then
+    return false, msg
+  end
+  succ, msg = lowsend(sf,data)
+  if msg then
+    return false, msg
+  end
+  return true
+end
+
+local function close(sf)
+  return sf.conn:close()
+end
+
+local meta = {
+  __index = {
+    recv  = recv,
+    send  = send,
+    close = close,
+  }
+}
+
+function open(host, port, timeout)
+  local conn = socket.tcp()
+  local succ, msg = conn:connect(host, port)
+  conn:settimeout(timeout)
+  if not succ then
+    return nil, msg
+  end
+  -- Receive their version
+  local version = conn:receive(2)
+  -- Send our version
+  conn:send("U ")
+
+  -- Valid version?
+  if version ~= "U " then
+    return nil, "invalid version"
+  end
+
+  local sf = { conn = conn }
+
+  return setmetatable(sf, meta)
+end

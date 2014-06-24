@@ -111,8 +111,10 @@ end
 
 -- verify if the nodeId is in the buffer AND the delta time still valid
 function hasMsgBuffer(nodeId)
-	return msgBuffer[nodeId] and msgBuffer[nodeId].time + deltaTimeRequest <= os.time()
+	return msgBuffer[nodeId] and msgBuffer[nodeId].time + deltaTimeRequest >= os.time()
 end
+
+10h+ 5 <= 10h4
 
 
 

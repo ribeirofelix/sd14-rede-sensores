@@ -116,7 +116,6 @@ end
 
 
 
-
 -- Main functions of the server : exported to the clients
 
 function serverObj.setDeltaTime(seconds)

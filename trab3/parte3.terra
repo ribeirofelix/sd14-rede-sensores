@@ -6,20 +6,25 @@ var u8 acumulador1 = 0;
 var u8 acumulador2 = 0;
 par do
 	/* no raiz */
-	if nodeId == 1 then
+	if nodeId == 11 then
 		pai1 = 1; /* no auxiliar para debug */
 		pai2 = 1; 
 		usrMsg_t(msgRadio1,1);
 		usrMsg_t(msgRadio2,1);
 		loop do
 			msgRadio2 = await RECEIVE;
-			if msgRadio2_d8_1 == 0 and msgRadio2_id>lastReq then
+			if msgRadio2_d8_1 == 2 and msgRadio2_id>lastReq then
 				lastReq = msgRadio2_id;
+				msgRadio2_d8_1 = 0; /* request */
 				msgRadio2_source = nodeId;
+				msgRadio2_target = BROADCAST;
 				emit Q_PUT (msgRadio2);
 				emit LED0(3);
 			
 				emit REQ_CUSTOM_A(1);
+			else/if msgRadio2_d8_1==1 then
+				msgRadio2_target = pai1;
+				emit Q_PUT (msgRadio2);
 			end
 		end
 	else
@@ -42,7 +47,7 @@ par do
 					emit LED0(3);
 				
 					emit REQ_CUSTOM_A(1);
-				end
+				end /* resposta de filhos */
 			else/if msgRadio2_d8_1==1 then
 				msgRadio2_target = pai1;
 				emit Q_PUT (msgRadio2);

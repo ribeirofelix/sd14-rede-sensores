@@ -1,0 +1,125 @@
+@include(/home/terra/TerraNet_v0.1/terra/Terra.m4)
+var u8 lastReq = 0;
+var u8 pai1 = 0;
+var u8 pai2 = 0;
+var u8 acumulador1 = 0;
+var u8 acumulador2 = 0;
+par do
+	/* no raiz */
+	if nodeId == 11 then
+		pai1 = 1; /* no auxiliar para debug */
+		pai2 = 1; 
+		usrMsg_t(msgRadio1,1);
+		usrMsg_t(msgRadio2,1);
+		loop do
+			msgRadio2 = await RECEIVE;
+			if msgRadio2_d8_1 == 2 and msgRadio2_id>lastReq then
+				lastReq = msgRadio2_id;
+				msgRadio2_d8_1 = 0; /* request */
+				msgRadio2_source = nodeId;
+				msgRadio2_target = BROADCAST;
+				emit Q_PUT (msgRadio2);
+				emit LED0(3);
+			
+				emit REQ_CUSTOM_A(1);
+			else/if msgRadio2_d8_1==1 then
+				msgRadio2_target = pai1;
+				emit Q_PUT (msgRadio2);
+			end
+		end
+	else
+		usrMsg_t(msgRadio2,1);		
+		loop do
+			msgRadio2 = await RECEIVE;
+			emit LED2(3);
+			/* requisicao */
+			if msgRadio2_d8_1==0 then
+				/* sendo a primeira requisicao, setamos os pais */
+				if pai1 == 0  then
+					pai1 = msgRadio2_source;
+				else/if pai2 == 0  then
+					pai2 = msgRadio2_source;
+				end
+				if msgRadio2_source==pai1 or msgRadio2_source==pai2 and msgRadio2_id>lastReq  then
+					lastReq = msgRadio2_id;
+					msgRadio2_source = nodeId;
+					emit Q_PUT (msgRadio2);
+					emit LED0(3);
+				
+					emit REQ_CUSTOM_A(1);
+				end /* resposta de filhos */
+			else/if msgRadio2_d8_1==1 then
+				msgRadio2_target = pai1;
+				emit Q_PUT (msgRadio2);
+			end
+		end
+	end
+with
+	loop do
+		await CUSTOM_A ;
+
+		/* envia resposta se nao for duplicada */
+		//if msgRadio2_source==pai1 or msgRadio2_source==pai2  then
+				
+		/* so atende novas requisicoes dos pais */
+		emit REQ_TEMP();
+		usrMsg_t(msgRadio4,1);
+		msgRadio4_id = lastReq;
+		msgRadio4_source = nodeId;
+		msgRadio4_target = pai1;
+		msgRadio4_d8_1 = 1; /* resposta */
+		msgRadio4_d8_3 = await TEMP;
+				
+		emit Q_PUT (msgRadio4);								
+	end
+with
+	var u8 x ;
+	usrMsg_t(msgRadio4, 1);
+	var u8 size ;
+	var u8* size_t = &size;
+	loop do
+		await Q_READY ;
+
+		loop do
+
+			emit Q_SIZE(size_t);
+			if (size == 0) then
+				break;
+			end
+			
+			emit Q_GET(msgRadio4);
+			if msgRadio4_target == BROADCAST then
+				emit SEND(msgRadio4);
+				await SEND_DONE;
+			else
+				var u8 try = 0 ;
+				loop do
+					emit SEND_ACK(msgRadio4);
+					x = await SEND_DONE_ACK ;
+					if x or try==3 then
+						break;
+					else
+						try = try + 1 ;
+					end
+				end
+
+				if try == 3 then
+					msgRadio4_target = pai2;
+					loop do
+						emit SEND_ACK(msgRadio4);
+						x = await SEND_DONE_ACK ;
+						if x or try==6 then
+							break;
+						else
+							try = try + 1 ;
+						end
+					end
+				end
+			end
+
+			await 50ms ;
+
+		end
+
+	end
+end

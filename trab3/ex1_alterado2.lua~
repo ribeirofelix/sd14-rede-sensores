@@ -1,26 +1,5 @@
 local tossam = require("tossam") 
 
-function serialize( o )
-	local srl 
-	if type(o) == "number" then
-		srl = o
-	elseif type(o) == "string" then
-		srl = string.format("%q",o)
-	elseif type(o) == "table" then
-		srl = "{\n"
-		for k,v in pairs(o) do
-			srl = srl ..  " [" .. k .. "] = "
-			srl = srl .. serialize(v)
-			srl = srl .. ",\n"
-		end
-		srl = srl .. "}\n"
-	else
-		error("Cannot serialize a" .. type(o))
-	end
-	return srl
-end
-
-
 local exit = false
 
 local newRequestNumber = 12

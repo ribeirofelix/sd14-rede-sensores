@@ -10,5 +10,13 @@ interface { name = "minhaInt",
                         }
 
                },
+			 setDeltaTime = {
+                 resulttype = "void",
+                 args = {{direction = "in",
+                          type = "double"},
+                        
+                        }
+
+               },
              }
             }

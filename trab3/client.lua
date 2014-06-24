@@ -50,9 +50,12 @@ describe("Simple call to getTemperature ", function()
 
 	
 
-		it("simple ", function  ()			
+		it("simple ", function  ()		
+			p1.setDeltaTime(1)
+			for i= 1,10000 do	
 			local a  = p1.getTemperature(21)
-			print(a)			
+			print(a)		
+			end	
 		end)
 end)
 

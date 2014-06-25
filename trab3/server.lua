@@ -114,7 +114,7 @@ function hasMsgBuffer(nodeId)
 	return msgBuffer[nodeId] and msgBuffer[nodeId].time + deltaTimeRequest >= os.time()
 end
 
-10h+ 5 <= 10h4
+--10h+ 5 <= 10h4
 
 
 

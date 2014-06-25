@@ -52,8 +52,8 @@ describe("Simple call to getTemperature ", function()
 
 		it("simple ", function  ()		
 			p1.setDeltaTime(1)
-			for i= 1,30 do	
-			local a  = p1.getTemperature(21)
+			for i= 1,5 do	
+			local a  = p1.getTemperature()
 			--print(a)		
 			end	
 		end)

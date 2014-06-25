@@ -7,7 +7,13 @@ Mod.createdServants = {}
 Mod.socket = require "socket"
 
 table.unpack = unpack
-table.pack = pack
+table.pack = function( ...)
+	local a = {}
+	 for i,v in ipairs(arg) do
+        a[i] = v 
+     end
+	return a 
+end
 
 -- Validates a table as an acceptable interface for this library, returns interface if it's ok or nil otherwise
 function Mod.ValidateInterface (interfaceObj)
@@ -217,7 +223,7 @@ end
 -- Actually makes rpc call
 function Mod.rpcCall (proxy, methodName, interface, args)
 	-- Verify Arguments
-	print "Calling rpc"
+	--print "Calling rpc"
 	local argsOk = Mod.VerifyData(methodName, interface, args, "in")
 	if not argsOk then
 		print ( Mod.errorPrefix .. "Tentativa de chamar " .. methodName .. " com argumentos inválidos.\n" )
@@ -241,11 +247,11 @@ function Mod.rpcCall (proxy, methodName, interface, args)
 		if not bytes then
 			print ("Error: " .. error)
 		else
-			print "Sent message"
+			--print "Sent message"
 			--Receive message
 			local resultsStrings = Mod.retrieveDataStrings(proxy.mysocket, methodName, interface, "out")
 			if resultsStrings then
-				print "Got answer"
+				--print "Got answer"
 				results = Mod.retrieveData(resultsStrings, methodName, interface, "out") 
 			else
 
@@ -442,7 +448,7 @@ function Mod.waitIncoming ()
 
 	while (true) do
 	  local socketsToRead = Mod.socket.select(set, nil)
-	  print"trying"
+	  --print"trying"
 	  for i, v in ipairs (socketsToRead) do
 	    local ip, port = v:getsockname()
 	    local servant = Mod.searchServant (ip, port)
@@ -455,10 +461,10 @@ function Mod.waitIncoming ()
 	      
 	      if method then
 	        
-	        print("Method " .. msg .. " declared")
+	       -- print("Method " .. msg .. " declared")
 	        print(client)
 	        local argsStrings = Mod.retrieveDataStrings(client, msg, servant.interface, "in")
-	        print("Arguments " .. table.concat(argsStrings, " "))
+	        --print("Arguments " .. table.concat(argsStrings, " "))
 	        
 	        local args = Mod.retrieveData(argsStrings, msg, servant.interface, "in")
 	        results = table.pack(pcall(method, table.unpack(args)))
@@ -472,13 +478,13 @@ function Mod.waitIncoming ()
 	      else
 	        answer = Mod.errorPrefix .. "Method \"" .. msg .. "\" not declared in servant.\n"
 	      end
-	      print ("Mensagem de Retorno \n" .. answer .. "Fim mensagem de retorno")
+	      --print ("Mensagem de Retorno \n" .. answer .. "Fim mensagem de retorno")
 	      local bytes, errorSend = client:send(answer)
 	      if not bytes then
 	        -- couldn't send answer: what to do?
 	        print "Couldn't send answer"
 	      end
-	      print "--------"
+	      --print "--------"
 	      end
 	      
 	  	end
